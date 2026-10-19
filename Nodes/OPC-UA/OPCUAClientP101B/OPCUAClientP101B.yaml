@@ -1,0 +1,67 @@
+Name: OPCUAClientP101B
+Id: g=2bbd26b385d714fd333d598fa4127300
+Type: OPCUAClient
+Children:
+- Name: ServerEndpointURL
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "opc.tcp://localhost:59102"
+- Name: MinimumMessageSecurityMode
+  Type: BaseDataVariableType
+  DataType: MessageSecurityModeEnum
+- Name: MinimumSecurityPolicy
+  Type: BaseDataVariableType
+  DataType: SecurityPolicyEnum
+- Name: UserIdentityType
+  Type: BaseDataVariableType
+  DataType: ns=29;UserIdentityTypeEnum
+- Name: ConnectionStatus
+  Type: BaseDataVariableType
+  DataType: ConnectionStatusEnum
+  AccessLevel: Read
+- Name: ServerUri
+  Type: BaseDataVariableType
+  DataType: String
+  AccessLevel: Read
+- Name: Events
+  Type: BaseDataVariableType
+  DataType: EventsEnum
+  Value: 1
+- Name: RuntimeConfigurations
+  Type: BaseObjectType
+- Class: Reference
+  Target: ns=29;i=8
+  Direction: Forward
+- Class: Reference
+  Target: ns=29;i=9
+  Direction: Forward
+- Class: Reference
+  Target: ns=29;i=54
+  Direction: Forward
+- Class: Reference
+  Target: ns=29;i=57
+  Direction: Forward
+- Class: Reference
+  Target: ns=29;i=91
+  Direction: Forward
+- Class: Reference
+  Target: ns=29;i=60
+  Direction: Forward
+- Class: Reference
+  Target: ns=29;i=63
+  Direction: Forward
+- Class: Reference
+  Target: ns=29;i=83
+  Direction: Forward
+- Class: Reference
+  Target: ns=29;i=75
+  Direction: Forward
+- Name: Objects
+  Type: BaseObjectType
+  Children:
+  - Name: ns=34;HottApplicationPump101B
+    Id: ns=34;g=e628b67b7f8a7fd25874638e3dd9e518
+    Type: ProjectFolder
+    Children:
+    - File: Model/Model.yaml
+    - File: AlarmTypes/AlarmTypes.yaml

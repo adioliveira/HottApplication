@@ -1,0 +1,9 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- File: Types/Types.yaml
+- File: Pumps/Pumps.yaml
+- File: Valves/Valves.yaml
+- File: Tanks/Tanks.yaml
+- File: GeneralAlarms/GeneralAlarms.yaml
+- File: Log01/Log01.yaml

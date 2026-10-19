@@ -1,0 +1,4 @@
+Name: ForModelViewer
+Type: FolderType
+Children:
+- File: ModelViewer/ModelViewer.yaml

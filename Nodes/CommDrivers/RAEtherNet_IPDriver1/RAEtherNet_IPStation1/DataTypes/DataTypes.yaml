@@ -1,0 +1,334 @@
+Name: DataTypes
+Type: FolderType
+Children:
+- Class: DataType
+  Name: Disruption_Definition
+  Id: g=2d88c9ab55fd0d325b7c2c43a2d715ce
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Disruption_Definition",
+    "DataType": {
+     "IdType": 2,
+     "Id": "2d88c9ab55fd0d325b7c2c43a2d715ce",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "IN_On",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IN_Power",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "OUT_Disruption",
+      "DataType": {
+       "Id": 6
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Disruption_Definition"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Product_Recipe
+  Id: g=2fa2ee872b438b880eb66c2d77592769
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Product_Recipe",
+    "DataType": {
+     "IdType": 2,
+     "Id": "2fa2ee872b438b880eb66c2d77592769",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Component_A",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Component_B",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Component_C",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ProductQ",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ProductionTime",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "LoadingSpeed_A",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "LoadingSpeed_B",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "LoadingSpeed_C",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "QProducedCycle",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Product_Recipe"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Machine_Definition
+  Id: g=ef9a6a98109e2fa50d91d5143c6c0766
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Machine_Definition",
+    "DataType": {
+     "IdType": 2,
+     "Id": "ef9a6a98109e2fa50d91d5143c6c0766",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Description",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "PAR_OutputBuffer",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "PAR_RejectsBuffer",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "PAR_HasDisruptions",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PAR_HasRejects",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PAR_LoadOnlyWhenEmpty",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IN_SpeedFactor",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "IN_Start",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IN_Stop",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IN_Reset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IN_Clear",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IN_GenerateFault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IN_FaultReasonCode",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "IN_Reject",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IN_Disruption",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "OUT_OutputBuffer",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OUT_RejectsBuffer",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OUT_Status",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "OUT_FaultReasonCode",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "OUT_UpstreamStarved",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OUT_DownstreamBlocked",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Product_Recipe",
+      "DataType": {
+       "IdType": 2,
+       "Id": "2fa2ee872b438b880eb66c2d77592769",
+       "Namespace": 7
+      }
+     },{
+      "Name": "OUT_Speed",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OUT_ProductionProgress",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OUT_Component_A",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OUT_Component_B",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OUT_Component_C",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OUT_IdealSpeed",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OUT_ProductionCounter",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OUT_RejectsCounter",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OUT_InternalOutput",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Machine_Definition"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: MergerDefinition
+  Id: g=cf404be36a60bc5102e00942f6e3e70a
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "MergerDefinition",
+    "DataType": {
+     "IdType": 2,
+     "Id": "cf404be36a60bc5102e00942f6e3e70a",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "OUT_Output",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "PAR_OutBuffor",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "PAR_LoadingSpeed",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "IN_Path1Open",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IN_Path2Open",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IN_Path3Open",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"MergerDefinition"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding

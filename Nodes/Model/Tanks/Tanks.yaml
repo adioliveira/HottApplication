@@ -1,0 +1,23 @@
+Name: Tanks
+Type: FolderType
+Children:
+- Name: TK101
+  Id: g=a9323da594414ea67f9898b29f8e7936
+  Type: tankData
+  Children:
+  - Name: tankLevel
+    Type: BaseDataVariableType
+    DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/HottApplication/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/ValvesBlock/OUT_Output"
+  - Name: tankMax
+    Type: BaseDataVariableType
+    DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/HottApplication/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/ValvesBlock/PAR_OutBuffor"

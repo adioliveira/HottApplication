@@ -1,0 +1,390 @@
+Name: DataStores
+Type: DataStoresCategoryFolder
+Children:
+- Name: InfluxDB
+  Id: g=645c82debfa5c231eb672655a29d93a4
+  Type: InfluxDBStoreRemote
+  Children:
+  - Name: Server
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "127.0.0.1"
+  - Name: Port
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 8086
+  - Name: UseSSL
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: SFEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: SFBufferMaxSize
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1000
+  - Name: SFBufferUsage
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: SFBufferOverflow
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: SFBufferOverwrite
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: P201Logger
+      Type: RemoteInfluxDBStoreTable
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=10;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: OUT_Flow
+          Type: StoreColumn
+          DataType: Float
+        - Name: OUT_Pressure
+          Type: StoreColumn
+          DataType: Float
+        - Name: tankLevel
+          Type: StoreColumn
+          DataType: Float
+    - Name: P101ALogger
+      Type: RemoteInfluxDBStoreTable
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=10;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: OUT_Flow
+          Type: StoreColumn
+          DataType: Float
+        - Name: OUT_Pressure
+          Type: StoreColumn
+          DataType: Float
+    - Name: P101CLogger
+      Id: g=9aec582bdbc9eaaa21b7d95141e25a49
+      Type: RemoteInfluxDBStoreTable
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=10;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: OUT_Flow
+          Type: StoreColumn
+          DataType: Float
+        - Name: OUT_Pressure
+          Type: StoreColumn
+          DataType: Float
+    - Name: P101BLogger
+      Type: RemoteInfluxDBStoreTable
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=10;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: OUT_Flow
+          Type: StoreColumn
+          DataType: Float
+        - Name: OUT_Pressure
+          Type: StoreColumn
+          DataType: Float
+  - Name: Token
+    Type: BaseDataVariableType
+    DataType: Password
+    Value: "0ic8PCnqbC--qGBt9H09MgZX0DdDJHn3Oq1DtS3fjPDKDqOH0kSX2Xye5zghKkJ3oCNFshN6Ba1JBAlSTiGQ3g=="
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../InfluxToken"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Organization
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "RA"
+  - Name: Bucket
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "DEMO"
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=10;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=59
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=67
+    Direction: Forward
+- Name: InfluxToken
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "2MwEW6oG8aIokPT1hVMDRW08VjgKS0c2kCJchzDZoCZLKQWdsj4B4tPUd0uPj2RW3KfeXFne0x5whUQs86fhqA=="
+- Name: Embedded_DB
+  Id: g=00f2596d790386e422056a172cbc4ee1
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: CPU
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=10;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: CPU Utilization
+          Type: StoreColumn
+          DataType: Int32
+    - Name: Log01_Data
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=10;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Variable1
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Variable2
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Variable3
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Variable4
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Variable5
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Variable6
+          Type: StoreColumn
+          DataType: Float
+  - Class: Reference
+    Target: ns=40;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=40;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=10;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=59
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=67
+    Direction: Forward

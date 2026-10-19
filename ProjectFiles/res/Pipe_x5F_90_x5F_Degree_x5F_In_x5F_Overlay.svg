@@ -1,0 +1,16 @@
+<svg version="1.2" baseProfile="tiny" id="EdgeSVG_YazSE" x="0px" y="0px" width="24px" height="78.027px" viewBox="0 0 24 78.027" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="1" y1="45.0273" x2="23" y2="45.0273">
+    <stop offset="0" style="stop-color:#000000;stop-opacity:0.5"/>
+    <stop offset="0.05" style="stop-color:#000000;stop-opacity:0.4"/>
+    <stop offset="0.5" style="stop-color:#000000;stop-opacity:0"/>
+    <stop offset="0.95" style="stop-color:#000000;stop-opacity:0.4"/>
+    <stop offset="1" style="stop-color:#000000;stop-opacity:0.5"/>
+  </linearGradient>
+  <rect x="1" y="12.027" fill="url(#SVGID_2_)" width="22" height="66"/>
+  <radialGradient id="SVGID_3_" cx="12" cy="12.002" r="10.9834" gradientUnits="userSpaceOnUse">
+    <stop offset="0" style="stop-color:#000000;stop-opacity:0"/>
+    <stop offset="0.7975" style="stop-color:#000000;stop-opacity:0.33"/>
+    <stop offset="1" style="stop-color:#000000;stop-opacity:0.5"/>
+  </radialGradient>
+  <path fill="url(#SVGID_3_)" d="M23,12v0.028H1.001c0,0,0-0.019,0-0.028c0-6.074,4.926-11,11-11S23,5.925,23,12z"/>
+</svg>

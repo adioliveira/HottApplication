@@ -1,0 +1,175 @@
+Project:
+ Name: HottApplication
+ GUID: 661d10844cd75fe25864e7aa03b59b8b
+ ProjectNamespaceIndex: 7
+ DisplayName: ''
+ Description: ''
+ Company: ''
+ Copyright: ''
+ FormatVersion: 1
+ ProductVersion: 1.7
+ CoreVersion: 5.0
+ Dependencies:
+  2:
+   Uri: 'urn:FTOptix:CoreBase'
+   Module: FTOptix.CoreBase
+   Version: 6.1
+  3:
+   Uri: 'urn:FTOptix:UI'
+   Module: FTOptix.UI
+   Version: 21.2
+  4:
+   Uri: 'urn:FTOptix:HMIProject'
+   Module: FTOptix.HMIProject
+   Version: 9.0
+  5:
+   Uri: 'urn:FTOptix:NativeUI'
+   Module: FTOptix.NativeUI
+   Version: 3.3
+  6:
+   Uri: 'urn:FTOptix:Retentivity'
+   Module: FTOptix.Retentivity
+   Version: 1.0
+  8:
+   Uri: 'urn:FTOptix:WebUI'
+   Module: FTOptix.WebUI
+   Version: 2.0
+  9:
+   Uri: 'urn:FTOptix:DataLogger'
+   Module: FTOptix.DataLogger
+   Version: 2.0
+  10:
+   Uri: 'urn:FTOptix:Store'
+   Module: FTOptix.Store
+   Version: 2.0
+  11:
+   Uri: 'urn:FTOptix:InfluxDBStore'
+   Module: FTOptix.InfluxDBStore
+   Version: 4.0
+  12:
+   Uri: 'urn:FTOptix:InfluxDBStoreRemote'
+   Module: FTOptix.InfluxDBStoreRemote
+   Version: 1.0
+  13:
+   Uri: 'urn:FTOptix:RAEtherNetIP'
+   Module: FTOptix.RAEtherNetIP
+   Version: 7.0
+  14:
+   Uri: 'urn:FTOptix:CommunicationDriver'
+   Module: FTOptix.CommunicationDriver
+   Version: 4.0
+  15:
+   Uri: 'urn:FTOptix:Core:Net'
+   Module: FTOptix.Core.Net
+   Version: 3.0
+  16:
+   Uri: 'urn:FTOptix:RAEtherNetIP:Net'
+   Module: FTOptix.RAEtherNetIP.Net
+   Version: 3.2
+  17:
+   Uri: 'urn:FTOptix:CommunicationDriver:Net'
+   Module: FTOptix.CommunicationDriver.Net
+   Version: 4.0
+  18:
+   Uri: 'urn:FTOptix:CoreBase:Net'
+   Module: FTOptix.CoreBase.Net
+   Version: 2.1
+  19:
+   Uri: 'urn:FTOptix:UI:Net'
+   Module: FTOptix.UI.Net
+   Version: 21.2
+  20:
+   Uri: 'urn:FTOptix:DataLogger:Net'
+   Module: FTOptix.DataLogger.Net
+   Version: 1.0
+  21:
+   Uri: 'urn:FTOptix:Store:Net'
+   Module: FTOptix.Store.Net
+   Version: 1.0
+  22:
+   Uri: 'urn:FTOptix:Retentivity:Net'
+   Module: FTOptix.Retentivity.Net
+   Version: 1.0
+  23:
+   Uri: 'urn:FTOptix:HMIProject:Net'
+   Module: FTOptix.HMIProject.Net
+   Version: 5.0
+  24:
+   Uri: 'urn:FTOptix:WebUI:Net'
+   Module: FTOptix.WebUI.Net
+   Version: 2.0
+  25:
+   Uri: 'urn:FTOptix:NativeUI:Net'
+   Module: FTOptix.NativeUI.Net
+   Version: 3.3
+  26:
+   Uri: 'urn:FTOptix:InfluxDBStore:Net'
+   Module: FTOptix.InfluxDBStore.Net
+   Version: 1.0
+  27:
+   Uri: 'urn:FTOptix:NetLogic'
+   Module: FTOptix.NetLogic
+   Version: 4.0
+  28:
+   Uri: 'urn:FTOptix:InfluxDBStoreRemote:Net'
+   Module: FTOptix.InfluxDBStoreRemote.Net
+   Version: 1.0
+  29:
+   Uri: 'urn:FTOptix:OPCUAClient'
+   Module: FTOptix.OPCUAClient
+   Version: 2.0
+  30:
+   Uri: 'urn:FTOptix:OPCUAClient:Net'
+   Module: FTOptix.OPCUAClient.Net
+   Version: 1.2
+  32:
+   Uri: 'urn:FTOptix:MQTTClient'
+   Module: FTOptix.MQTTClient
+   Version: 7.0
+  33:
+   Uri: 'urn:FTOptix:MQTTClient:Net'
+   Module: FTOptix.MQTTClient.Net
+   Version: 6.0
+  34:
+   Uri: '2bbd26b385d714fd333d598fa4127300#HottApplicationPump101B'
+   ServerUri: 2bbd26b385d714fd333d598fa4127300
+  35:
+   Uri: '1ef90c47624871a4df5156a20fa629d7#HottApplicationPump101A'
+   ServerUri: 1ef90c47624871a4df5156a20fa629d7
+  36:
+   Uri: 'urn:FTOptix:Alarm'
+   Module: FTOptix.Alarm
+   Version: 6.1
+  37:
+   Uri: 'urn:FTOptix:Alarm:Net'
+   Module: FTOptix.Alarm.Net
+   Version: 1.2
+  38:
+   Uri: 'urn:FTOptix:SerialPort'
+   Module: FTOptix.SerialPort
+   Version: 1.0
+  39:
+   Uri: 'urn:FTOptix:SerialPort:Net'
+   Module: FTOptix.SerialPort.Net
+   Version: 1.0
+  40:
+   Uri: 'urn:FTOptix:SQLiteStore'
+   Module: FTOptix.SQLiteStore
+   Version: 1.0
+  41:
+   Uri: 'urn:FTOptix:SQLiteStore:Net'
+   Module: FTOptix.SQLiteStore.Net
+   Version: 1.0
+ Statistics:
+  TotalNodeCount: 24678
+  Objects: 5218
+  ObjectTypes: 107
+  Variables: 19309
+  VariableTypes: 4
+  DataTypes: 4
+  Methods: 36
+  References: 514
+  ReferenceTypes: 0
+  Files: 58
+ Nodes:
+ - File: Nodes/HottApplication.yaml

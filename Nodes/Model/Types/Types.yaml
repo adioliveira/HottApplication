@@ -1,0 +1,416 @@
+Name: Types
+Type: FolderType
+Children:
+- Name: ns=7;pumpStationData
+  Id: g=da7ed79702455696bb918120f6d1f892
+  Supertype: BaseObjectType
+  Children:
+  - Name: IN_Start
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: IN_Stop
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: IN_Reset
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: OUT_Flow
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: OUT_Pressure
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: OUT_Status
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: IN_SpeedFactor
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: PressureAlarm
+    Type: ns=7;StationAlarm
+    Children:
+    - Class: Reference
+      Target: ns=36;i=81
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=82
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=83
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=130
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=135
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=132
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=146
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=148
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=150
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=152
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=154
+      Direction: Forward
+    - Name: InputValue
+      Type: BaseDataVariableType
+      DataType: Double
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../OUT_Pressure"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: LastEvent
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+    - Name: Station
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Message
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Children:
+      - Name: HighHighStateMessage
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Pressure above maximum limit"}
+      - Name: LowLowStateMessage
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Pressure below minimum limit"}
+    - Name: HighHighLimit
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 4.5
+    - Name: LowLowLimit
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 1.3
+    - Name: Severity
+      Type: BaseDataVariableType
+      DataType: UInt16
+      ModellingRule: Optional
+      Value: 450
+  - Name: FlowAlarm
+    Type: ns=7;StationAlarm
+    Children:
+    - Class: Reference
+      Target: ns=36;i=81
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=82
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=83
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=130
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=135
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=132
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=146
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=148
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=150
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=152
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=154
+      Direction: Forward
+    - Name: InputValue
+      Type: BaseDataVariableType
+      DataType: Double
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../OUT_Flow"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: LastEvent
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+    - Name: Station
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Message
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Children:
+      - Name: LowLowStateMessage
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Flow rate below minimum"}
+    - Name: LowLowLimit
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 5.0
+    - Name: Severity
+      Type: BaseDataVariableType
+      DataType: UInt16
+      ModellingRule: Optional
+      Value: 900
+  - Name: StatusAlarm
+    Type: ns=7;StationAlarmDigital
+    Children:
+    - Class: Reference
+      Target: ns=36;i=81
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=82
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=83
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=130
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=135
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=132
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=146
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=148
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=150
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=152
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=154
+      Direction: Forward
+    - Name: NormalStateValue
+      Type: BaseDataVariableType
+      DataType: Double
+    - Name: InputValue
+      Type: BaseDataVariableType
+      DataType: Double
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0} != 1"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../OUT_Status"
+    - Name: LastEvent
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+    - Name: Station
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Severity
+      Type: BaseDataVariableType
+      DataType: UInt16
+      ModellingRule: Optional
+      Value: 100
+    - Name: Message
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Pump stopped or fault detected"}
+- Name: tankData
+  Id: g=f0d3bc8f403cbc68ca44a92ff7329bac
+  Supertype: BaseObjectType
+  Children:
+  - Name: tankLevel
+    Type: BaseDataVariableType
+    DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/HottApplication/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/ValvesBlock/OUT_Output"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: tankMax
+    Type: BaseDataVariableType
+    DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/HottApplication/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/ValvesBlock/PAR_OutBuffor"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+- Name: ns=7;StationAlarm
+  Id: g=dfa63d329556ceea50311a318f036970
+  Supertype: ExclusiveLevelAlarmController
+  Children:
+  - Class: Reference
+    Target: ns=36;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=154
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Station
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    ModellingRule: Optional
+  - Name: Severity
+    Type: BaseDataVariableType
+    DataType: UInt16
+    ModellingRule: Optional
+    Value: 100
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=a268456f436dda7fb53fcb054bca5999
+- Name: ns=7;StationAlarmDigital
+  Id: g=acb8c7b69d39317cde855ade16d166f5
+  Supertype: OffNormalAlarmController
+  Children:
+  - Class: Reference
+    Target: ns=36;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=d54fee48bf3925031f1d433e3b5750bb
+  - Name: Station
+    Type: BaseDataVariableType
+    DataType: String

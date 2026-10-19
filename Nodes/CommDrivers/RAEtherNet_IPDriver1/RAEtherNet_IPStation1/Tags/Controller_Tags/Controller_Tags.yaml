@@ -1,0 +1,1403 @@
+Name: Controller Tags
+Type: FolderType
+Children:
+- Name: P_101_A
+  Id: g=295637f96aaeb48d8a9c5dcfe35bbb31
+  Type: Machine_Definition
+  DataType: Machine_Definition
+  Children:
+  - Name: Description
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.Description"
+  - Name: PAR_OutputBuffer
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.PAR_OutputBuffer"
+  - Name: PAR_RejectsBuffer
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.PAR_RejectsBuffer"
+  - Name: PAR_HasDisruptions
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.PAR_HasDisruptions"
+  - Name: PAR_HasRejects
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.PAR_HasRejects"
+  - Name: PAR_LoadOnlyWhenEmpty
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.PAR_LoadOnlyWhenEmpty"
+  - Name: IN_SpeedFactor
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.IN_SpeedFactor"
+  - Name: IN_Start
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.IN_Start"
+  - Name: IN_Stop
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.IN_Stop"
+  - Name: IN_Reset
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.IN_Reset"
+  - Name: IN_Clear
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.IN_Clear"
+  - Name: IN_GenerateFault
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.IN_GenerateFault"
+  - Name: IN_FaultReasonCode
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.IN_FaultReasonCode"
+  - Name: IN_Reject
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.IN_Reject"
+  - Name: IN_Disruption
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.IN_Disruption"
+  - Name: OUT_OutputBuffer
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.OUT_OutputBuffer"
+  - Name: OUT_RejectsBuffer
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.OUT_RejectsBuffer"
+  - Name: OUT_Status
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.OUT_Status"
+  - Name: OUT_FaultReasonCode
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.OUT_FaultReasonCode"
+  - Name: OUT_UpstreamStarved
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.OUT_UpstreamStarved"
+  - Name: OUT_DownstreamBlocked
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.OUT_DownstreamBlocked"
+  - Name: Product_Recipe
+    Type: Product_Recipe
+    DataType: Product_Recipe
+    Children:
+    - Name: Component_A
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_A.Product_Recipe.Component_A"
+    - Name: Component_B
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_A.Product_Recipe.Component_B"
+    - Name: Component_C
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_A.Product_Recipe.Component_C"
+    - Name: ProductQ
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_A.Product_Recipe.ProductQ"
+    - Name: ProductionTime
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_A.Product_Recipe.ProductionTime"
+    - Name: LoadingSpeed_A
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_A.Product_Recipe.LoadingSpeed_A"
+    - Name: LoadingSpeed_B
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_A.Product_Recipe.LoadingSpeed_B"
+    - Name: LoadingSpeed_C
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_A.Product_Recipe.LoadingSpeed_C"
+    - Name: QProducedCycle
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_A.Product_Recipe.QProducedCycle"
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.Product_Recipe"
+    - Name: BlockRead
+      Type: BaseDataVariableType
+      DataType: Boolean
+  - Name: OUT_Speed
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.OUT_Speed"
+  - Name: OUT_ProductionProgress
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.OUT_ProductionProgress"
+  - Name: OUT_Component_A
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.OUT_Component_A"
+  - Name: OUT_Component_B
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.OUT_Component_B"
+  - Name: OUT_Component_C
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.OUT_Component_C"
+  - Name: OUT_IdealSpeed
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.OUT_IdealSpeed"
+  - Name: OUT_ProductionCounter
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.OUT_ProductionCounter"
+  - Name: OUT_RejectsCounter
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.OUT_RejectsCounter"
+  - Name: OUT_InternalOutput
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_A.OUT_InternalOutput"
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "P_101_A"
+  - Name: BlockRead
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: P_101_B
+  Id: g=d83f185c9cbbb0d2e50270574674dd30
+  Type: Machine_Definition
+  DataType: Machine_Definition
+  Children:
+  - Name: Description
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.Description"
+  - Name: PAR_OutputBuffer
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.PAR_OutputBuffer"
+  - Name: PAR_RejectsBuffer
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.PAR_RejectsBuffer"
+  - Name: PAR_HasDisruptions
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.PAR_HasDisruptions"
+  - Name: PAR_HasRejects
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.PAR_HasRejects"
+  - Name: PAR_LoadOnlyWhenEmpty
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.PAR_LoadOnlyWhenEmpty"
+  - Name: IN_SpeedFactor
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.IN_SpeedFactor"
+  - Name: IN_Start
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.IN_Start"
+  - Name: IN_Stop
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.IN_Stop"
+  - Name: IN_Reset
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.IN_Reset"
+  - Name: IN_Clear
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.IN_Clear"
+  - Name: IN_GenerateFault
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.IN_GenerateFault"
+  - Name: IN_FaultReasonCode
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.IN_FaultReasonCode"
+  - Name: IN_Reject
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.IN_Reject"
+  - Name: IN_Disruption
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.IN_Disruption"
+  - Name: OUT_OutputBuffer
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.OUT_OutputBuffer"
+  - Name: OUT_RejectsBuffer
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.OUT_RejectsBuffer"
+  - Name: OUT_Status
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.OUT_Status"
+  - Name: OUT_FaultReasonCode
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.OUT_FaultReasonCode"
+  - Name: OUT_UpstreamStarved
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.OUT_UpstreamStarved"
+  - Name: OUT_DownstreamBlocked
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.OUT_DownstreamBlocked"
+  - Name: Product_Recipe
+    Type: Product_Recipe
+    DataType: Product_Recipe
+    Children:
+    - Name: Component_A
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_B.Product_Recipe.Component_A"
+    - Name: Component_B
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_B.Product_Recipe.Component_B"
+    - Name: Component_C
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_B.Product_Recipe.Component_C"
+    - Name: ProductQ
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_B.Product_Recipe.ProductQ"
+    - Name: ProductionTime
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_B.Product_Recipe.ProductionTime"
+    - Name: LoadingSpeed_A
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_B.Product_Recipe.LoadingSpeed_A"
+    - Name: LoadingSpeed_B
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_B.Product_Recipe.LoadingSpeed_B"
+    - Name: LoadingSpeed_C
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_B.Product_Recipe.LoadingSpeed_C"
+    - Name: QProducedCycle
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_B.Product_Recipe.QProducedCycle"
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.Product_Recipe"
+    - Name: BlockRead
+      Type: BaseDataVariableType
+      DataType: Boolean
+  - Name: OUT_Speed
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.OUT_Speed"
+  - Name: OUT_ProductionProgress
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.OUT_ProductionProgress"
+  - Name: OUT_Component_A
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.OUT_Component_A"
+  - Name: OUT_Component_B
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.OUT_Component_B"
+  - Name: OUT_Component_C
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.OUT_Component_C"
+  - Name: OUT_IdealSpeed
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.OUT_IdealSpeed"
+  - Name: OUT_ProductionCounter
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.OUT_ProductionCounter"
+  - Name: OUT_RejectsCounter
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.OUT_RejectsCounter"
+  - Name: OUT_InternalOutput
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_B.OUT_InternalOutput"
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "P_101_B"
+  - Name: BlockRead
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: P_101_C
+  Id: g=f671ad52df52d3a45380ebf41507559f
+  Type: Machine_Definition
+  DataType: Machine_Definition
+  Children:
+  - Name: Description
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.Description"
+  - Name: PAR_OutputBuffer
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.PAR_OutputBuffer"
+  - Name: PAR_RejectsBuffer
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.PAR_RejectsBuffer"
+  - Name: PAR_HasDisruptions
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.PAR_HasDisruptions"
+  - Name: PAR_HasRejects
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.PAR_HasRejects"
+  - Name: PAR_LoadOnlyWhenEmpty
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.PAR_LoadOnlyWhenEmpty"
+  - Name: IN_SpeedFactor
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.IN_SpeedFactor"
+  - Name: IN_Start
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.IN_Start"
+  - Name: IN_Stop
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.IN_Stop"
+  - Name: IN_Reset
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.IN_Reset"
+  - Name: IN_Clear
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.IN_Clear"
+  - Name: IN_GenerateFault
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.IN_GenerateFault"
+  - Name: IN_FaultReasonCode
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.IN_FaultReasonCode"
+  - Name: IN_Reject
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.IN_Reject"
+  - Name: IN_Disruption
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.IN_Disruption"
+  - Name: OUT_OutputBuffer
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.OUT_OutputBuffer"
+  - Name: OUT_RejectsBuffer
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.OUT_RejectsBuffer"
+  - Name: OUT_Status
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.OUT_Status"
+  - Name: OUT_FaultReasonCode
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.OUT_FaultReasonCode"
+  - Name: OUT_UpstreamStarved
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.OUT_UpstreamStarved"
+  - Name: OUT_DownstreamBlocked
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.OUT_DownstreamBlocked"
+  - Name: Product_Recipe
+    Type: Product_Recipe
+    DataType: Product_Recipe
+    Children:
+    - Name: Component_A
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_C.Product_Recipe.Component_A"
+    - Name: Component_B
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_C.Product_Recipe.Component_B"
+    - Name: Component_C
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_C.Product_Recipe.Component_C"
+    - Name: ProductQ
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_C.Product_Recipe.ProductQ"
+    - Name: ProductionTime
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_C.Product_Recipe.ProductionTime"
+    - Name: LoadingSpeed_A
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_C.Product_Recipe.LoadingSpeed_A"
+    - Name: LoadingSpeed_B
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_C.Product_Recipe.LoadingSpeed_B"
+    - Name: LoadingSpeed_C
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_C.Product_Recipe.LoadingSpeed_C"
+    - Name: QProducedCycle
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_101_C.Product_Recipe.QProducedCycle"
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.Product_Recipe"
+    - Name: BlockRead
+      Type: BaseDataVariableType
+      DataType: Boolean
+  - Name: OUT_Speed
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.OUT_Speed"
+  - Name: OUT_ProductionProgress
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.OUT_ProductionProgress"
+  - Name: OUT_Component_A
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.OUT_Component_A"
+  - Name: OUT_Component_B
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.OUT_Component_B"
+  - Name: OUT_Component_C
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.OUT_Component_C"
+  - Name: OUT_IdealSpeed
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.OUT_IdealSpeed"
+  - Name: OUT_ProductionCounter
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.OUT_ProductionCounter"
+  - Name: OUT_RejectsCounter
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.OUT_RejectsCounter"
+  - Name: OUT_InternalOutput
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_101_C.OUT_InternalOutput"
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "P_101_C"
+  - Name: BlockRead
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: ValvesBlock
+  Id: g=327c75bcfb2bd81fecce823c712adf08
+  Type: MergerDefinition
+  DataType: MergerDefinition
+  Children:
+  - Name: OUT_Output
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ValvesBlock.OUT_Output"
+  - Name: PAR_OutBuffor
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ValvesBlock.PAR_OutBuffor"
+  - Name: PAR_LoadingSpeed
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ValvesBlock.PAR_LoadingSpeed"
+  - Name: IN_Path1Open
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ValvesBlock.IN_Path1Open"
+  - Name: IN_Path2Open
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ValvesBlock.IN_Path2Open"
+  - Name: IN_Path3Open
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ValvesBlock.IN_Path3Open"
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ValvesBlock"
+  - Name: BlockRead
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: P_201
+  Id: g=36a542939caaf5282b53ab7f0441530a
+  Type: Machine_Definition
+  DataType: Machine_Definition
+  Children:
+  - Name: Description
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.Description"
+  - Name: PAR_OutputBuffer
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.PAR_OutputBuffer"
+  - Name: PAR_RejectsBuffer
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.PAR_RejectsBuffer"
+  - Name: PAR_HasDisruptions
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.PAR_HasDisruptions"
+  - Name: PAR_HasRejects
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.PAR_HasRejects"
+  - Name: PAR_LoadOnlyWhenEmpty
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.PAR_LoadOnlyWhenEmpty"
+  - Name: IN_SpeedFactor
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.IN_SpeedFactor"
+  - Name: IN_Start
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.IN_Start"
+  - Name: IN_Stop
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.IN_Stop"
+  - Name: IN_Reset
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.IN_Reset"
+  - Name: IN_Clear
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.IN_Clear"
+  - Name: IN_GenerateFault
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.IN_GenerateFault"
+  - Name: IN_FaultReasonCode
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.IN_FaultReasonCode"
+  - Name: IN_Reject
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.IN_Reject"
+  - Name: IN_Disruption
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.IN_Disruption"
+  - Name: OUT_OutputBuffer
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.OUT_OutputBuffer"
+  - Name: OUT_RejectsBuffer
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.OUT_RejectsBuffer"
+  - Name: OUT_Status
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.OUT_Status"
+  - Name: OUT_FaultReasonCode
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.OUT_FaultReasonCode"
+  - Name: OUT_UpstreamStarved
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.OUT_UpstreamStarved"
+  - Name: OUT_DownstreamBlocked
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.OUT_DownstreamBlocked"
+  - Name: Product_Recipe
+    Type: Product_Recipe
+    DataType: Product_Recipe
+    Children:
+    - Name: Component_A
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_201.Product_Recipe.Component_A"
+    - Name: Component_B
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_201.Product_Recipe.Component_B"
+    - Name: Component_C
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_201.Product_Recipe.Component_C"
+    - Name: ProductQ
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_201.Product_Recipe.ProductQ"
+    - Name: ProductionTime
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_201.Product_Recipe.ProductionTime"
+    - Name: LoadingSpeed_A
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_201.Product_Recipe.LoadingSpeed_A"
+    - Name: LoadingSpeed_B
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_201.Product_Recipe.LoadingSpeed_B"
+    - Name: LoadingSpeed_C
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_201.Product_Recipe.LoadingSpeed_C"
+    - Name: QProducedCycle
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_201.Product_Recipe.QProducedCycle"
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.Product_Recipe"
+    - Name: BlockRead
+      Type: BaseDataVariableType
+      DataType: Boolean
+  - Name: OUT_Speed
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.OUT_Speed"
+  - Name: OUT_ProductionProgress
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.OUT_ProductionProgress"
+  - Name: OUT_Component_A
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.OUT_Component_A"
+  - Name: OUT_Component_B
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.OUT_Component_B"
+  - Name: OUT_Component_C
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.OUT_Component_C"
+  - Name: OUT_IdealSpeed
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.OUT_IdealSpeed"
+  - Name: OUT_ProductionCounter
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.OUT_ProductionCounter"
+  - Name: OUT_RejectsCounter
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.OUT_RejectsCounter"
+  - Name: OUT_InternalOutput
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P_201.OUT_InternalOutput"
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "P_201"
+  - Name: BlockRead
+    Type: BaseDataVariableType
+    DataType: Boolean

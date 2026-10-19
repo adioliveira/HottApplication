@@ -1,0 +1,219 @@
+Name: ns=35;Model
+Id: ns=35;g=d1895278c07febe9648281b4eea33749
+Type: ModelCategoryFolder
+Children:
+- File: Types/Types.yaml
+- Name: ns=35;pumpObject
+  Id: ns=35;g=a8dd25d77014a84ea5faff647acd00ee
+  Type: ns=35;pumpStationData
+  Children:
+  - Name: IN_Start
+    Id: ns=35;g=d18dd65bddef5f9afd989d730a6127e4
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: IN_Stop
+    Id: ns=35;g=0179f5bc44a42b357a8fbe665eb70752
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: IN_Reset
+    Id: ns=35;g=6668bf5d49b530a1d52f8f0e23c3df78
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: OUT_Flow
+    Id: ns=35;g=b3472a67796ce08321bc44953c18fcf0
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: OUT_Pressure
+    Id: ns=35;g=847880c4cdeb524154b5e0b02d685de1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 1.0
+  - Name: OUT_Status
+    Id: ns=35;g=22af5daa621745273724d7419470743a
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: IN_SpeedFactor
+    Id: ns=35;g=fe15ada5a9bfca87a09c57e48879707e
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: PressureAlarm
+    Id: ns=35;g=01928c1d37c1ce26bbaac1871cfa2183
+    Type: ns=35;StationAlarm
+    Children:
+    - Class: Reference
+      Target: ns=36;i=81
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=82
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=83
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=130
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=135
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=132
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=146
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=148
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=150
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=152
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=154
+      Direction: Forward
+    - Name: InputValue
+      Id: ns=35;g=3d6d1c85d9a4e7df5cf26f522ba7191f
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: LastEvent
+      Id: ns=35;g=4a314040d0eac213c868a598d467616a
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: {"Type":24,"Body":[{"Type":15,"Body":"AZKMHTfBzia7qsGHHPohg/lYkkmismJ/Q1JP8Od0xVw="},{"Type":13,"Body":"2026-04-10T14:21:15.0064380"},{"Type":17,"Body":{"IdType":0,"Id":0,"Namespace":-1}},{"Type":1,"Body":true},{"Type":21,"Body":[{"LocaleId":"en-US","Text":"Pressure below minimum limit"}]},{"Type":5,"Body":0},{"Type":21,"Body":{"NamespaceIndex":-1,"LocaleId":"","Text":""}},{"Type":12,"Body":""},{"Type":13,"Body":"2026-04-10T14:21:15.0064380"},{"Type":24,"Body":[{"Type":17,"Body":{"IdType":2,"Id":"454c6b3581973a7c303a20b8dc84b404","Namespace":35}},{"Type":1,"Body":true},{"Type":1,"Body":false},{"Type":1,"Body":false},{"Type":7,"Body":0},{"Type":5,"Body":450},{"Type":17,"Body":{"IdType":2,"Id":"847880c4cdeb524154b5e0b02d685de1","Namespace":35}},{"Type":20,"Body":{"Name":"OUT_Pressure","Uri":35}},{"Type":11,"Body":1.0},{"Type":6,"Body":-1},{"Type":6,"Body":0},{"Type":11,"Body":0.0},{"Type":0,"Body":null},{"Type":24,"Body":[{"Type":0,"Body":null},{"Type":24,"Body":[{"Type":11,"Body":4.5},{"Type":6,"Body":-1},{"Type":6,"Body":0},{"Type":0,"Body":null},{"Type":6,"Body":-1},{"Type":6,"Body":0},{"Type":0,"Body":null},{"Type":6,"Body":-1},{"Type":6,"Body":0},{"Type":11,"Body":1.3},{"Type":6,"Body":-1},{"Type":6,"Body":0}]},{"Type":0,"Body":null}]}]},{"Type":24,"Body":[{"Type":1,"Body":false},{"Type":1,"Body":true},{"Type":1,"Body":false},{"Type":0,"Body":null},{"Type":24,"Body":[{"Type":1,"Body":true},{"Type":24,"Body":[{"Type":24,"Body":[{"Type":6,"Body":4},{"Type":6,"Body":0}]},{"Type":0,"Body":null}]}]},{"Type":24,"Body":[{"Type":1,"Body":false},{"Type":1,"Body":false},{"Type":11,"Body":0.0}]}]},{"Type":24,"Body":[{"Type":24,"Body":[{"Type":20,"Body":[{"Name":"Station","Uri":35}]},{"Type":21,"Body":[{"LocaleId":"en-US","Text":"P101A"}]}]}]}]}
+    - Name: Station
+      Id: ns=35;g=6cf6676d3456e103085f5073bdbbcb2a
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P101A"
+    - Name: HighHighLimit
+      Id: ns=35;g=9ecfee735490497003e5d28b9de85626
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 4.5
+    - Name: LowLowLimit
+      Id: ns=35;g=dc0cea419cb72f75984cee19426571f4
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 1.3
+  - Name: FlowAlarm
+    Id: ns=35;g=4b0204aa853fed9f72c97ff45ab0f1b8
+    Type: ns=35;StationAlarm
+    Children:
+    - Class: Reference
+      Target: ns=36;i=81
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=82
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=83
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=130
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=135
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=132
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=146
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=148
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=150
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=152
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=154
+      Direction: Forward
+    - Name: InputValue
+      Id: ns=35;g=90e0fffa1db9bab0af40c9a0aa229e1b
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: LastEvent
+      Id: ns=35;g=1a5ae987324689aac4cfb1ff6bcce056
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: {"Type":24,"Body":[{"Type":15,"Body":"SwIEqoU/7Z9yyX/0WrDxuEHwAIRaqb9WXCDkrcg/HsY="},{"Type":13,"Body":"2026-04-10T14:21:15.0064380"},{"Type":17,"Body":{"IdType":0,"Id":0,"Namespace":-1}},{"Type":1,"Body":true},{"Type":21,"Body":[{"LocaleId":"en-US","Text":"Flow rate below minimum"}]},{"Type":5,"Body":0},{"Type":21,"Body":{"NamespaceIndex":-1,"LocaleId":"","Text":""}},{"Type":12,"Body":""},{"Type":13,"Body":"2026-04-10T14:21:15.0064380"},{"Type":24,"Body":[{"Type":17,"Body":{"IdType":2,"Id":"454c6b3581973a7c303a20b8dc84b404","Namespace":35}},{"Type":1,"Body":true},{"Type":1,"Body":false},{"Type":1,"Body":false},{"Type":7,"Body":0},{"Type":5,"Body":900},{"Type":17,"Body":{"IdType":2,"Id":"847880c4cdeb524154b5e0b02d685de1","Namespace":35}},{"Type":20,"Body":{"Name":"OUT_Pressure","Uri":35}},{"Type":11,"Body":1.0},{"Type":6,"Body":-1},{"Type":6,"Body":0},{"Type":11,"Body":0.0},{"Type":0,"Body":null},{"Type":24,"Body":[{"Type":0,"Body":null},{"Type":24,"Body":[{"Type":0,"Body":null},{"Type":6,"Body":-1},{"Type":6,"Body":0},{"Type":0,"Body":null},{"Type":6,"Body":-1},{"Type":6,"Body":0},{"Type":0,"Body":null},{"Type":6,"Body":-1},{"Type":6,"Body":0},{"Type":11,"Body":5.0},{"Type":6,"Body":-1},{"Type":6,"Body":0}]},{"Type":0,"Body":null}]}]},{"Type":24,"Body":[{"Type":1,"Body":false},{"Type":1,"Body":true},{"Type":1,"Body":false},{"Type":0,"Body":null},{"Type":24,"Body":[{"Type":1,"Body":true},{"Type":24,"Body":[{"Type":24,"Body":[{"Type":6,"Body":4},{"Type":6,"Body":0}]},{"Type":0,"Body":null}]}]},{"Type":24,"Body":[{"Type":1,"Body":false},{"Type":1,"Body":false},{"Type":11,"Body":0.0}]}]},{"Type":24,"Body":[{"Type":24,"Body":[{"Type":20,"Body":[{"Name":"Station","Uri":35}]},{"Type":21,"Body":[{"LocaleId":"en-US","Text":"P101A"}]}]}]}]}
+    - Name: Station
+      Id: ns=35;g=5715346c89cd0e524c4a3b4c8231a991
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P101A"
+    - Name: LowLowLimit
+      Id: ns=35;g=45ba7cfb99fa58fb4a2bd3c27bb5f135
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 5.0
+  - Name: StatusAlarm
+    Id: ns=35;g=5b7b6d27b79f81d3a1f799f56f2c17ba
+    Type: ns=35;StationAlarmDigital
+    Children:
+    - Class: Reference
+      Target: ns=36;i=81
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=82
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=83
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=130
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=135
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=132
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=146
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=148
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=150
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=152
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=154
+      Direction: Forward
+    - Name: NormalStateValue
+      Id: ns=35;g=402a14eb8cba966ff149874d4b393d94
+      Type: BaseDataVariableType
+      DataType: Double
+    - Name: InputValue
+      Id: ns=35;g=9f022711f5b134ba21ed2ccd399e3616
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: LastEvent
+      Id: ns=35;g=8159bced856a2f1dfc3bc4348855fe94
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: {"Type":24,"Body":[{"Type":15,"Body":"W3ttJ7efgdOh95n1bywXuoJMZYmC9+9wqz69S5GPg9U="},{"Type":13,"Body":"2026-04-10T14:21:15.0064380"},{"Type":17,"Body":{"IdType":0,"Id":0,"Namespace":-1}},{"Type":1,"Body":true},{"Type":21,"Body":[{"LocaleId":"en-US","Text":"Pump stopped or fault detected"}]},{"Type":5,"Body":0},{"Type":21,"Body":{"NamespaceIndex":-1,"LocaleId":"","Text":""}},{"Type":12,"Body":""},{"Type":13,"Body":"2026-04-10T14:21:15.0064380"},{"Type":24,"Body":[{"Type":17,"Body":{"IdType":2,"Id":"236847e1fc48ce09da1ab4a59bdceed8","Namespace":35}},{"Type":1,"Body":true},{"Type":1,"Body":false},{"Type":1,"Body":false},{"Type":7,"Body":0},{"Type":5,"Body":100},{"Type":17,"Body":{"IdType":2,"Id":"22af5daa621745273724d7419470743a","Namespace":35}},{"Type":20,"Body":{"Name":"OUT_Status","Uri":35}},{"Type":11,"Body":1.0},{"Type":6,"Body":-1},{"Type":6,"Body":0},{"Type":11,"Body":0.0},{"Type":0,"Body":null},{"Type":24,"Body":[{"Type":24,"Body":[{"Type":17,"Body":{"IdType":2,"Id":"402a14eb8cba966ff149874d4b393d94","Namespace":35}},{"Type":11,"Body":0.0},{"Type":6,"Body":-1},{"Type":6,"Body":0}]},{"Type":0,"Body":null},{"Type":0,"Body":null}]}]},{"Type":24,"Body":[{"Type":1,"Body":false},{"Type":1,"Body":true},{"Type":1,"Body":false},{"Type":0,"Body":null},{"Type":24,"Body":[{"Type":1,"Body":true},{"Type":24,"Body":[{"Type":0,"Body":null},{"Type":0,"Body":null}]}]},{"Type":24,"Body":[{"Type":1,"Body":false},{"Type":1,"Body":false},{"Type":11,"Body":0.0}]}]},{"Type":24,"Body":[{"Type":24,"Body":[{"Type":20,"Body":[{"Name":"Station","Uri":35}]},{"Type":21,"Body":[{"LocaleId":"en-US","Text":"P101A"}]}]}]}]}
+    - Name: Station
+      Id: ns=35;g=87a4f92c53dc7e26e65ee7601ad48abc
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P101A"

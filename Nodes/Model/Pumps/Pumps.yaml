@@ -1,0 +1,281 @@
+Name: Pumps
+Type: FolderType
+Children:
+- Name: P201
+  Id: g=0e2c96c647cd764b93fee51b512dd48d
+  Type: ns=7;pumpStationData
+  Children:
+  - Name: IN_Start
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/P_201/IN_Start"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: IN_Stop
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/P_201/IN_Stop"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: IN_Reset
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/P_201/IN_Reset"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: OUT_Flow
+    Type: BaseDataVariableType
+    DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/P_201/OUT_Speed"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: OUT_Pressure
+    Type: BaseDataVariableType
+    DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/P_201/OUT_OutputBuffer"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: OUT_Status
+    Type: BaseDataVariableType
+    DataType: Int32
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/P_201/OUT_Status"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: IN_SpeedFactor
+    Type: BaseDataVariableType
+    DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/P_201/IN_SpeedFactor"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: PressureAlarm
+    Type: ns=7;StationAlarm
+    Children:
+    - Class: Reference
+      Target: ns=36;i=81
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=82
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=83
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=130
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=135
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=132
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=146
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=148
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=150
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=152
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=154
+      Direction: Forward
+    - Name: InputValue
+      Type: BaseDataVariableType
+      DataType: Double
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../OUT_Pressure"
+    - Name: LastEvent
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+    - Name: Station
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P201"
+    - Name: HighHighLimit
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 4.5
+    - Name: LowLowLimit
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 1.3
+  - Name: FlowAlarm
+    Type: ns=7;StationAlarm
+    Children:
+    - Class: Reference
+      Target: ns=36;i=81
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=82
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=83
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=130
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=135
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=132
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=146
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=148
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=150
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=152
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=154
+      Direction: Forward
+    - Name: InputValue
+      Type: BaseDataVariableType
+      DataType: Double
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../OUT_Flow"
+    - Name: LastEvent
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+    - Name: Station
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P201"
+    - Name: LowLowLimit
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 5.0
+  - Name: StatusAlarm
+    Type: ns=7;StationAlarmDigital
+    Children:
+    - Class: Reference
+      Target: ns=36;i=81
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=82
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=83
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=130
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=135
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=132
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=146
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=148
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=150
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=152
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=154
+      Direction: Forward
+    - Name: NormalStateValue
+      Type: BaseDataVariableType
+      DataType: Double
+    - Name: InputValue
+      Type: BaseDataVariableType
+      DataType: Double
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../OUT_Status"
+    - Name: LastEvent
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+    - Name: Station
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P201"
+- File: P101C/P101C.yaml

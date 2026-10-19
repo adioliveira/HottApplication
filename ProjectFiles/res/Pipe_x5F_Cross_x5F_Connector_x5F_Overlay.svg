@@ -1,0 +1,26 @@
+<svg version="1.2" baseProfile="tiny" id="EdgeSVG_tO0Bn" x="0px" y="0px" width="66px" height="66px" viewBox="0 0 66 66" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="22" y1="49.5117" x2="44" y2="49.5117">
+    <stop offset="0" style="stop-color:#000000;stop-opacity:0.5"/>
+    <stop offset="0.05" style="stop-color:#000000;stop-opacity:0.4"/>
+    <stop offset="0.5" style="stop-color:#000000;stop-opacity:0"/>
+    <stop offset="0.95" style="stop-color:#000000;stop-opacity:0.4"/>
+    <stop offset="1" style="stop-color:#000000;stop-opacity:0.5"/>
+  </linearGradient>
+  <path fill="url(#SVGID_2_)" d="M32.978,33.023C29.356,33.023,22.001,43.998,22,44v22h22V44v-0.001&#xD;&#xA;&#x9;&#x9;C44,43.999,36.601,33.023,32.978,33.023z"/>
+  <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="22" y1="16.4883" x2="44" y2="16.4883">
+    <stop offset="0" style="stop-color:#000000;stop-opacity:0.5"/>
+    <stop offset="0.05" style="stop-color:#000000;stop-opacity:0.4"/>
+    <stop offset="0.5" style="stop-color:#000000;stop-opacity:0"/>
+    <stop offset="0.95" style="stop-color:#000000;stop-opacity:0.4"/>
+    <stop offset="1" style="stop-color:#000000;stop-opacity:0.5"/>
+  </linearGradient>
+  <path fill="url(#SVGID_3_)" d="M44,22.001c0,0-7.399,10.975-11.022,10.975C29.356,32.977,22.001,22.002,22,22l0,0V0h22v22V22.001z"/>
+  <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="33" y1="44" x2="33" y2="22">
+    <stop offset="0" style="stop-color:#000000;stop-opacity:0.5"/>
+    <stop offset="0.05" style="stop-color:#000000;stop-opacity:0.4"/>
+    <stop offset="0.5" style="stop-color:#000000;stop-opacity:0"/>
+    <stop offset="0.95" style="stop-color:#000000;stop-opacity:0.4"/>
+    <stop offset="1" style="stop-color:#000000;stop-opacity:0.5"/>
+  </linearGradient>
+  <path fill="url(#SVGID_4_)" d="M44,22v0.001c0,0-7.399,10.975-11.022,10.975C29.356,32.977,22.001,22.002,22,22H0v22h22&#xD;&#xA;&#x9;&#x9;c0.001-0.002,7.356-10.977,10.978-10.977C36.601,33.023,44,43.999,44,43.999V44h22V22H44z"/>
+</svg>

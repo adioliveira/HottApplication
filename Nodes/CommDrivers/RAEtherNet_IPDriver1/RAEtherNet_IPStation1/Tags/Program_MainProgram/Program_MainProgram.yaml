@@ -1,0 +1,157 @@
+Name: 'Program:MainProgram'
+Type: FolderType
+Children:
+- Name: DG_PS1Def
+  Id: g=fcc76a9d58f546616c535401869e7794
+  Type: Disruption_Definition
+  DataType: Disruption_Definition
+  Children:
+  - Name: IN_On
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.DG_PS1Def.IN_On"
+  - Name: IN_Power
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.DG_PS1Def.IN_Power"
+  - Name: OUT_Disruption
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.DG_PS1Def.OUT_Disruption"
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.DG_PS1Def"
+  - Name: BlockRead
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: ProductInputs
+  Type: RAEtherNetIPTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [10]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.ProductInputs"
+- Name: DG_PS2Def
+  Id: g=593aaad13113c9f6d2b8226eac18964e
+  Type: Disruption_Definition
+  DataType: Disruption_Definition
+  Children:
+  - Name: IN_On
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.DG_PS2Def.IN_On"
+  - Name: IN_Power
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.DG_PS2Def.IN_Power"
+  - Name: OUT_Disruption
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.DG_PS2Def.OUT_Disruption"
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.DG_PS2Def"
+  - Name: BlockRead
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DG_PS3Def
+  Id: g=42e761ceeea7ca3fe4714b6eebad4570
+  Type: Disruption_Definition
+  DataType: Disruption_Definition
+  Children:
+  - Name: IN_On
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.DG_PS3Def.IN_On"
+  - Name: IN_Power
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.DG_PS3Def.IN_Power"
+  - Name: OUT_Disruption
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.DG_PS3Def.OUT_Disruption"
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.DG_PS3Def"
+  - Name: BlockRead
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DG_PS4Def
+  Id: g=73c7445cb46fc8849bbc85507e7dc296
+  Type: Disruption_Definition
+  DataType: Disruption_Definition
+  Children:
+  - Name: IN_On
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.DG_PS4Def.IN_On"
+  - Name: IN_Power
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.DG_PS4Def.IN_Power"
+  - Name: OUT_Disruption
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.DG_PS4Def.OUT_Disruption"
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.DG_PS4Def"
+  - Name: BlockRead
+    Type: BaseDataVariableType
+    DataType: Boolean

@@ -1,0 +1,9 @@
+Name: Templates
+Type: FolderType
+Children:
+- File: Screens/Screens.yaml
+- File: Widgets/Widgets.yaml
+- File: Frames/Frames.yaml
+- File: ForModelViewer/ForModelViewer.yaml
+- File: LoginForm/LoginForm.yaml
+- File: AlarmWidgets/AlarmWidgets.yaml

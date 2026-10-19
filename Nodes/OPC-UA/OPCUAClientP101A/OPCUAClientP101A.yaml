@@ -1,0 +1,71 @@
+Name: OPCUAClientP101A
+Id: g=1ef90c47624871a4df5156a20fa629d7
+Type: OPCUAClient
+Children:
+- Name: ServerEndpointURL
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "opc.tcp://localhost:59101"
+- Name: MinimumMessageSecurityMode
+  Type: BaseDataVariableType
+  DataType: MessageSecurityModeEnum
+- Name: MinimumSecurityPolicy
+  Type: BaseDataVariableType
+  DataType: SecurityPolicyEnum
+- Name: UserIdentityType
+  Type: BaseDataVariableType
+  DataType: ns=29;UserIdentityTypeEnum
+- Name: ConnectionStatus
+  Type: BaseDataVariableType
+  DataType: ConnectionStatusEnum
+  AccessLevel: Read
+- Name: ServerUri
+  Type: BaseDataVariableType
+  DataType: String
+  AccessLevel: Read
+- Name: Events
+  Type: BaseDataVariableType
+  DataType: EventsEnum
+  Value: 1
+- Name: RuntimeConfigurations
+  Type: BaseObjectType
+- Class: Reference
+  Target: ns=29;i=8
+  Direction: Forward
+- Class: Reference
+  Target: ns=29;i=9
+  Direction: Forward
+- Class: Reference
+  Target: ns=29;i=54
+  Direction: Forward
+- Class: Reference
+  Target: ns=29;i=57
+  Direction: Forward
+- Class: Reference
+  Target: ns=29;i=91
+  Direction: Forward
+- Class: Reference
+  Target: ns=29;i=60
+  Direction: Forward
+- Class: Reference
+  Target: ns=29;i=63
+  Direction: Forward
+- Class: Reference
+  Target: ns=29;i=83
+  Direction: Forward
+- Class: Reference
+  Target: ns=29;i=75
+  Direction: Forward
+- Name: Objects
+  Type: BaseObjectType
+  Children:
+  - Name: ns=35;HottApplicationPump101A
+    Id: ns=35;g=75e7356be945990f4393325458f46433
+    Type: ProjectFolder
+    Children:
+    - File: Model/Model.yaml
+    - File: AlarmTypes/AlarmTypes.yaml
+- Name: InfluxToken
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "2MwEW6oG8aIokPT1hVMDRW08VjgKS0c2kCJchzDZoCZLKQWdsj4B4tPUd0uPj2RW3KfeXFne0x5whUQs86fhqA=="

@@ -1,0 +1,31 @@
+Name: P101C
+Id: g=4e5477455a6e6bab41c6c477d5d59c86
+Type: FolderType
+Children:
+- Name: IN_Start
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: IN_Stop
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: IN_Reset
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: OUT_Flow
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: OUT_Pressure
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: OUT_Status
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: IN_SpeedFactor
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: Timestamp
+  Type: BaseDataVariableType
+  DataType: UtcTime
+- Name: LocalTimestamp
+  Type: BaseDataVariableType
+  DataType: DateTime

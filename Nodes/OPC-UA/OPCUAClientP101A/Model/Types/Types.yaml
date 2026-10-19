@@ -1,0 +1,388 @@
+Name: ns=35;Types
+Id: ns=35;g=10f1daa35b01456382abafa449d16551
+Type: FolderType
+Children:
+- Name: ns=35;pumpStationData
+  Id: ns=35;g=da7ed79702455696bb918120f6d1f892
+  Supertype: BaseObjectType
+  Children:
+  - Name: ns=35;IN_Start
+    Id: ns=35;g=688c12a4b3f3e70f01f0a88a40072aa6
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: ns=35;IN_Stop
+    Id: ns=35;g=7660c5c7fca36fb84cd0fe3cf628d965
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: ns=35;IN_Reset
+    Id: ns=35;g=401d7a1188824954119170f1e5e09753
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: ns=35;OUT_Flow
+    Id: ns=35;g=0b8951b80f8941c1c964973305935cdb
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: ns=35;OUT_Pressure
+    Id: ns=35;g=5124ad907b8e35fc7e819cb3e033f2db
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: ns=35;OUT_Status
+    Id: ns=35;g=fec82b34b470431b03e3c931245d14d9
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: ns=35;IN_SpeedFactor
+    Id: ns=35;g=22acd6ed781c916c74ccd4be35fb8061
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: ns=35;PressureAlarm
+    Id: ns=35;g=584b4de7247bda8acf0bbcfca8ed3209
+    Type: ns=35;StationAlarm
+    Children:
+    - Class: Reference
+      Target: ns=36;i=81
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=82
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=83
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=130
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=135
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=132
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=146
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=148
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=150
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=152
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=154
+      Direction: Forward
+    - Name: InputValue
+      Id: ns=35;g=d6f31a7cdb684da0c692f4a921d643f7
+      Type: BaseDataVariableType
+      DataType: Double
+    - Name: LastEvent
+      Id: ns=35;g=8cacf57ef2e995b50bec618dfdc817ec
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+    - Name: Station
+      Id: ns=35;g=90d3df3acc2e8f2992afb68a3f7d5ea0
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P101A"
+    - Name: Message
+      Id: ns=35;g=8fb7176024c0f2d804f2c952dc2ed29c
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Children:
+      - Name: HighHighStateMessage
+        Id: ns=35;g=5c2413ddb066b46d8dc9089ac82ee645
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Pressure above maximum limit"}
+      - Name: LowLowStateMessage
+        Id: ns=35;g=962954efe2f98f1071d5857404500092
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Pressure below minimum limit"}
+    - Name: HighHighLimit
+      Id: ns=35;g=e2387afadf5b91914c89901956986e36
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 4.5
+    - Name: LowLowLimit
+      Id: ns=35;g=24b4f4a672101b23d03112fe77d98d70
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 1.3
+    - Name: Severity
+      Id: ns=35;g=2a170db250d9565f78649978230b1d8b
+      Type: BaseDataVariableType
+      DataType: UInt16
+      ModellingRule: Optional
+      Value: 450
+  - Name: ns=35;FlowAlarm
+    Id: ns=35;g=3c4994fc199059c5f5e8490dbd9cb3f7
+    Type: ns=35;StationAlarm
+    Children:
+    - Class: Reference
+      Target: ns=36;i=81
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=82
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=83
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=130
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=135
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=132
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=146
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=148
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=150
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=152
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=154
+      Direction: Forward
+    - Name: InputValue
+      Id: ns=35;g=7f6cb7d9962bb68508fa301580f71294
+      Type: BaseDataVariableType
+      DataType: Double
+    - Name: LastEvent
+      Id: ns=35;g=f1dba6dfdaa7dfca689dc83d0b8792b0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+    - Name: Station
+      Id: ns=35;g=858246e08c152a13f745c6cae38dc8be
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P101A"
+    - Name: Message
+      Id: ns=35;g=027a3e534283eb63d13216c32e8841ae
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Children:
+      - Name: LowLowStateMessage
+        Id: ns=35;g=5d73db92067126bae7b1d681bf53d250
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Flow rate below minimum"}
+    - Name: LowLowLimit
+      Id: ns=35;g=ca3bf95cf07bec74b630aabdf8440e33
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 5.0
+    - Name: Severity
+      Id: ns=35;g=5dceb408d0f59409aaffa5dc95d21cd4
+      Type: BaseDataVariableType
+      DataType: UInt16
+      ModellingRule: Optional
+      Value: 900
+  - Name: ns=35;StatusAlarm
+    Id: ns=35;g=a7c9477cef7b49664ae564346c887e0a
+    Type: ns=35;StationAlarmDigital
+    Children:
+    - Class: Reference
+      Target: ns=36;i=81
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=82
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=83
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=130
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=135
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=132
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=146
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=148
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=150
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=152
+      Direction: Forward
+    - Class: Reference
+      Target: ns=36;i=154
+      Direction: Forward
+    - Name: NormalStateValue
+      Id: ns=35;g=b3e1518797d1d75a023d0b957cb12310
+      Type: BaseDataVariableType
+      DataType: Double
+    - Name: InputValue
+      Id: ns=35;g=573f44771c1643434c8ff7a9b6e3bf74
+      Type: BaseDataVariableType
+      DataType: Double
+    - Name: LastEvent
+      Id: ns=35;g=16dff7be86b74682f77bbdcbabac357d
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+    - Name: Station
+      Id: ns=35;g=0d5f0a89b0bd60974c6265dd2ec85399
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "P101A"
+    - Name: Severity
+      Id: ns=35;g=1bcdf2207438ea9a0422bf121295bab2
+      Type: BaseDataVariableType
+      DataType: UInt16
+      ModellingRule: Optional
+      Value: 100
+    - Name: Message
+      Id: ns=35;g=f016645a0d818fd70ce46bc2300451e2
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Pump stopped or fault detected"}
+- Name: ns=35;StationAlarm
+  Id: ns=35;g=dfa63d329556ceea50311a318f036970
+  Supertype: ExclusiveLevelAlarmController
+  Children:
+  - Class: Reference
+    Target: ns=36;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=154
+    Direction: Forward
+  - Name: InputValue
+    Id: ns=35;g=06d2bcc6cdbe8f8e20efbcc7e2564f4d
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: LastEvent
+    Id: ns=35;g=d97685bd33ac67debf81b8b0e7551e63
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: ns=35;Station
+    Id: ns=35;g=a173374918bff34c690efe653e1ef8b5
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Message
+    Id: ns=35;g=29c45f9f8a9096a09d3a3d82c4cf8361
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    ModellingRule: Optional
+  - Name: Severity
+    Id: ns=35;g=2b92325c3118b8b1f7879cad867d4bb5
+    Type: BaseDataVariableType
+    DataType: UInt16
+    ModellingRule: Optional
+    Value: 100
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: ns=35;g=454c6b3581973a7c303a20b8dc84b404
+- Name: ns=35;StationAlarmDigital
+  Id: ns=35;g=acb8c7b69d39317cde855ade16d166f5
+  Supertype: OffNormalAlarmController
+  Children:
+  - Class: Reference
+    Target: ns=36;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=36;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: ns=35;g=7ed40e7167363cb889bf57414b2534e8
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: ns=35;g=d3c615d5908bbd54172231a3651b0f2c
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: LastEvent
+    Id: ns=35;g=eaa38d3a4dd1ebbc14dfc9dab7c53f49
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: ns=35;Station
+    Id: ns=35;g=89c5213c383e948e49bcde41a3445238
+    Type: BaseDataVariableType
+    DataType: String
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: ns=35;g=236847e1fc48ce09da1ab4a59bdceed8
