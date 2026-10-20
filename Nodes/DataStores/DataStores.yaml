@@ -63,7 +63,7 @@ Children:
           DataType: UtcTime
         - Name: LocalTimestamp
           Type: StoreColumn
-          DataType: DateTime
+          DataType: ns=0;DateTime
         - Name: OUT_Flow
           Type: StoreColumn
           DataType: Float
@@ -98,7 +98,7 @@ Children:
           DataType: UtcTime
         - Name: LocalTimestamp
           Type: StoreColumn
-          DataType: DateTime
+          DataType: ns=0;DateTime
         - Name: OUT_Flow
           Type: StoreColumn
           DataType: Float
@@ -131,7 +131,7 @@ Children:
           DataType: UtcTime
         - Name: LocalTimestamp
           Type: StoreColumn
-          DataType: DateTime
+          DataType: ns=0;DateTime
         - Name: OUT_Flow
           Type: StoreColumn
           DataType: Float
@@ -163,7 +163,7 @@ Children:
           DataType: UtcTime
         - Name: LocalTimestamp
           Type: StoreColumn
-          DataType: DateTime
+          DataType: ns=0;DateTime
         - Name: OUT_Flow
           Type: StoreColumn
           DataType: Float
@@ -281,7 +281,7 @@ Children:
           DataType: UtcTime
         - Name: LocalTimestamp
           Type: StoreColumn
-          DataType: DateTime
+          DataType: ns=0;DateTime
         - Name: CPU Utilization
           Type: StoreColumn
           DataType: Int32
@@ -308,7 +308,7 @@ Children:
           DataType: UtcTime
         - Name: LocalTimestamp
           Type: StoreColumn
-          DataType: DateTime
+          DataType: ns=0;DateTime
         - Name: Variable1
           Type: StoreColumn
           DataType: Int32
@@ -327,6 +327,23 @@ Children:
         - Name: Variable6
           Type: StoreColumn
           DataType: Float
+    - Name: Log01_Data
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=10;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
   - Class: Reference
     Target: ns=40;i=30
     Direction: Forward

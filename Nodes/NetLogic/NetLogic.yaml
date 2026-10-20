@@ -7,7 +7,7 @@ Children:
   Children:
   - Name: Time
     Type: BaseDataVariableType
-    DataType: DateTime
+    DataType: ns=0;DateTime
     Children:
     - Name: Year
       Type: BaseDataVariableType
@@ -29,7 +29,7 @@ Children:
       DataType: Int32
   - Name: UTCTime
     Type: BaseDataVariableType
-    DataType: DateTime
+    DataType: ns=0;DateTime
     Children:
     - Name: Year
       Type: BaseDataVariableType
@@ -147,7 +147,7 @@ Children:
   Children:
   - Name: PayloadTimeStamp
     Type: BaseDataVariableType
-    DataType: DateTime
+    DataType: ns=0;DateTime
     Children:
     - Name: DynamicLink
       Type: DynamicLink
@@ -213,3 +213,30 @@ Children:
         Value: 2
   - Class: Method
     Name: AreaCalc
+- Name: DB_Confirm
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: DataStore
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"f32d9c311f595e2084079c3f6845a6f9","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+  - Name: RowCount
+    Type: BaseDataVariableType
+    DataType: Int32
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Log01/RowCount"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Class: Method
+    Name: GetRowCount

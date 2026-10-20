@@ -28,4 +28,4 @@ Children:
   DataType: UtcTime
 - Name: LocalTimestamp
   Type: BaseDataVariableType
-  DataType: DateTime
+  DataType: ns=0;DateTime

@@ -101,7 +101,7 @@ Children:
       DataType: Boolean
     - Name: PayloadUpdateTimestamp
       Type: BaseDataVariableType
-      DataType: DateTime
+      DataType: ns=0;DateTime
       ReferenceType: HasProperty
       AccessLevel: Read
     - Name: Item

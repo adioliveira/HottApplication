@@ -27215,7 +27215,7 @@ Children:
             Value: true
           - Name: Time
             Type: BaseDataVariableType
-            DataType: DateTime
+            DataType: ns=0;DateTime
         - Name: YAxis
           Type: ValueAxis
           Children:
@@ -27452,7 +27452,7 @@ Children:
             Value: true
           - Name: Time
             Type: BaseDataVariableType
-            DataType: DateTime
+            DataType: ns=0;DateTime
         - Name: YAxis
           Type: ValueAxis
           Children:
@@ -27685,7 +27685,7 @@ Children:
             Value: true
           - Name: Time
             Type: BaseDataVariableType
-            DataType: DateTime
+            DataType: ns=0;DateTime
         - Name: YAxis
           Type: ValueAxis
           Children:
@@ -27971,7 +27971,7 @@ Children:
             Value: true
           - Name: Time
             Type: BaseDataVariableType
-            DataType: DateTime
+            DataType: ns=0;DateTime
         - Name: YAxis
           Type: ValueAxis
           Children:
@@ -28162,7 +28162,7 @@ Children:
                 Value: "../../../../../../GL/loggerView1/Trend1/XAxis/Time@NodeId"
             - Name: Value
               Type: BaseDataVariableType
-              DataType: DateTime
+              DataType: ns=0;DateTime
               Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
               Children:
               - Name: DynamicLink
@@ -28229,7 +28229,7 @@ Children:
                 Value: "../../../../../../GL/loggerView2/Trend1/XAxis/Time@NodeId"
             - Name: Value
               Type: BaseDataVariableType
-              DataType: DateTime
+              DataType: ns=0;DateTime
               Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
               Children:
               - Name: DynamicLink
@@ -28296,7 +28296,7 @@ Children:
                 Value: "../../../../../../GL/loggerView3/Trend1/XAxis/Time@NodeId"
             - Name: Value
               Type: BaseDataVariableType
-              DataType: DateTime
+              DataType: ns=0;DateTime
               Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
               Children:
               - Name: DynamicLink
@@ -33298,7 +33298,7 @@ Children:
               Type: BaseDataVariableType
               DataType: VariablePointer
               Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
-              Value: {"IdType":2,"Id":"ce8b0e50946d83c0bc590e3f072e32fc","Namespace":7}
+              Value: "/Objects/HottApplication/Model/Log01/Trigger"
             - Name: Value
               Type: BaseDataVariableType
               DataType: Boolean

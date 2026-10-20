@@ -1,0 +1,4 @@
+Name: EIP_Driver
+Type: RAEtherNetIPDriver
+Children:
+- File: CLX01/CLX01.yaml

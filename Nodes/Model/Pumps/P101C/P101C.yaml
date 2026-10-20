@@ -97,7 +97,7 @@ Children:
             Value: "/Objects/HottApplication/Model/Pumps/P101C/LastPayloadTimeStamp"
           - Name: Value
             Type: BaseDataVariableType
-            DataType: DateTime
+            DataType: ns=0;DateTime
             Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
             Children:
             - Name: DynamicLink
@@ -152,5 +152,5 @@ Children:
 - Name: LastPayloadTimeStamp
   Id: g=a74280d6d3822a1d0b1163b83c427285
   Type: BaseDataVariableType
-  DataType: DateTime
+  DataType: ns=0;DateTime
   Value: "1988-02-28T00:00:00.0000000"

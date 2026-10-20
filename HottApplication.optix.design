@@ -52,18 +52,23 @@ Project:
    Uri: 'urn:FTOptix:Alarm:Net'
    Module: FTOptix.Alarm.Net
    Version: 1.2
+  14:
+   Uri: 'urn:FTOptix:Core:Net'
+   Module: FTOptix.Core.Net
+   Version: 3.0
  Statistics:
-  TotalNodeCount: 12
-  Objects: 3
+  TotalNodeCount: 17
+  Objects: 4
   ObjectTypes: 0
-  Variables: 9
+  Variables: 13
   VariableTypes: 0
   DataTypes: 0
   Methods: 0
   References: 0
   ReferenceTypes: 0
-  Files: 3
+  Files: 4
  Nodes:
+ - File: DesignTimeNodes/CommDrivers/EIP_Driver/CLX01/TagImporter.yaml
  - File: DesignTimeNodes/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/TagImporter.yaml
  - File: 'DesignTimeNodes/OPC-UA/OPCUAClientP101A/OPCUATagImporter.yaml'
  - File: 'DesignTimeNodes/OPC-UA/OPCUAClientP101B/OPCUATagImporter.yaml'
