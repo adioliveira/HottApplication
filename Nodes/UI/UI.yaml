@@ -564,6 +564,11 @@ Children:
         Type: BaseVariableType
         DataType: Size
         Value: 60.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 168.0
     - Name: navigationBackground
       Type: Rectangle
       Children:
