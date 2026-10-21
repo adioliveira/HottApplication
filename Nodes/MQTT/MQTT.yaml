@@ -145,6 +145,18 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       AccessLevel: Read
+    - Name: EventLogger
+      Type: NodePointer
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/EventLogger"
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType/EventFieldToLog"
   - Name: P101C_DataLogSub
     Type: MQTTSubscriber
     Children:

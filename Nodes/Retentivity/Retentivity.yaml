@@ -28,6 +28,12 @@ Children:
     DataType: Boolean
     ReferenceType: HasProperty
     Value: true
+  - Class: Reference
+    Target: ns=6;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=6;i=14
+    Direction: Forward
 - Name: AlarmsRetentivityStorage
   Type: RetentivityStorage
   Children:
@@ -55,3 +61,9 @@ Children:
     DataType: Boolean
     ReferenceType: HasProperty
     Value: true
+  - Class: Reference
+    Target: ns=6;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=6;i=14
+    Direction: Forward

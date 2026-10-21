@@ -7,7 +7,7 @@ Project:
  Company: ''
  Copyright: ''
  FormatVersion: 1
- ProductVersion: 1.7
+ ProductVersion: 1.8
  CoreVersion: 5.0
  Dependencies:
   2:
@@ -17,11 +17,11 @@ Project:
   3:
    Uri: 'urn:FTOptix:UI'
    Module: FTOptix.UI
-   Version: 21.2
+   Version: 22.0
   4:
    Uri: 'urn:FTOptix:HMIProject'
    Module: FTOptix.HMIProject
-   Version: 9.0
+   Version: 11.0
   5:
    Uri: 'urn:FTOptix:NativeUI'
    Module: FTOptix.NativeUI
@@ -29,11 +29,11 @@ Project:
   6:
    Uri: 'urn:FTOptix:Retentivity'
    Module: FTOptix.Retentivity
-   Version: 1.0
+   Version: 2.0
   8:
    Uri: 'urn:FTOptix:WebUI'
    Module: FTOptix.WebUI
-   Version: 2.0
+   Version: 3.0
   9:
    Uri: 'urn:FTOptix:DataLogger'
    Module: FTOptix.DataLogger
@@ -77,7 +77,7 @@ Project:
   19:
    Uri: 'urn:FTOptix:UI:Net'
    Module: FTOptix.UI.Net
-   Version: 21.2
+   Version: 22.0
   20:
    Uri: 'urn:FTOptix:DataLogger:Net'
    Module: FTOptix.DataLogger.Net
@@ -89,15 +89,15 @@ Project:
   22:
    Uri: 'urn:FTOptix:Retentivity:Net'
    Module: FTOptix.Retentivity.Net
-   Version: 1.0
+   Version: 1.1
   23:
    Uri: 'urn:FTOptix:HMIProject:Net'
    Module: FTOptix.HMIProject.Net
-   Version: 5.0
+   Version: 6.0
   24:
    Uri: 'urn:FTOptix:WebUI:Net'
    Module: FTOptix.WebUI.Net
-   Version: 2.0
+   Version: 3.0
   25:
    Uri: 'urn:FTOptix:NativeUI:Net'
    Module: FTOptix.NativeUI.Net
@@ -125,11 +125,11 @@ Project:
   32:
    Uri: 'urn:FTOptix:MQTTClient'
    Module: FTOptix.MQTTClient
-   Version: 7.0
+   Version: 9.0
   33:
    Uri: 'urn:FTOptix:MQTTClient:Net'
    Module: FTOptix.MQTTClient.Net
-   Version: 6.0
+   Version: 8.0
   34:
    Uri: '2bbd26b385d714fd333d598fa4127300#HottApplicationPump101B'
    ServerUri: 2bbd26b385d714fd333d598fa4127300
@@ -160,16 +160,24 @@ Project:
    Uri: 'urn:FTOptix:SQLiteStore:Net'
    Module: FTOptix.SQLiteStore.Net
    Version: 1.0
+  42:
+   Uri: 'urn:FTOptix:EventLogger'
+   Module: FTOptix.EventLogger
+   Version: 2.1
+  43:
+   Uri: 'urn:FTOptix:EventLogger:Net'
+   Module: FTOptix.EventLogger.Net
+   Version: 1.0
  Statistics:
-  TotalNodeCount: 269572
-  Objects: 6233
+  TotalNodeCount: 269576
+  Objects: 6234
   ObjectTypes: 107
-  Variables: 263055
+  Variables: 263058
   VariableTypes: 70
   DataTypes: 70
   Methods: 37
-  References: 531
+  References: 535
   ReferenceTypes: 0
-  Files: 67
+  Files: 68
  Nodes:
  - File: Nodes/HottApplication.yaml

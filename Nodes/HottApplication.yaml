@@ -69,3 +69,4 @@ Children:
 - Name: RuntimeOptimization
   Type: PropertyGroup
 - File: AlarmTypes/AlarmTypes.yaml
+- File: HighAvailability/HighAvailability.yaml

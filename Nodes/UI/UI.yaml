@@ -471,7 +471,7 @@ Children:
   - Name: VirtualKeyboard
     Type: BaseDataVariableType
     DataType: VirtualKeyboardEngineTypeEnum
-  - Name: MaxNumberOfConnections
+  - Name: MaxNumberOfWebConnections
     Type: BaseDataVariableType
     DataType: UInt32
     Value: 100
