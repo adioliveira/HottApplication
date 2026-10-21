@@ -9,6 +9,7 @@ using UAManagedCore;
 using FTOptix.Alarm;
 using FTOptix.SerialPort;
 using FTOptix.SQLiteStore;
+using FTOptix.MQTTBroker;
 using static AlarmFilterDataLogic;
 #endregion
 

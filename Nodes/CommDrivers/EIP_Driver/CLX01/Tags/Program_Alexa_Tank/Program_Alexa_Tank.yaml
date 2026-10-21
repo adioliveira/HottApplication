@@ -1,7 +1,9 @@
 Name: 'Program:Alexa_Tank'
+Id: g=e970f1eb86f3779f8ea268d6ee448ac0
 Type: FolderType
 Children:
 - Name: active_stop
+  Id: g=e444afb4eb797d440cf0fa2dcdde7324
   Type: RAEtherNetIPTag
   DataType: Boolean
   Children:
@@ -10,6 +12,7 @@ Children:
     DataType: String
     Value: "Program:Alexa_Tank.active_stop"
 - Name: level
+  Id: g=63c1671b94be4d41bb1fccb6bc47fdba
   Type: RAEtherNetIPTag
   DataType: Int32
   Children:
@@ -18,6 +21,7 @@ Children:
     DataType: String
     Value: "Program:Alexa_Tank.level"
 - Name: level_down
+  Id: g=2a04343829b78540ec9c82c028dfa1f0
   Type: RAEtherNetIPTag
   DataType: Boolean
   Children:
@@ -26,6 +30,7 @@ Children:
     DataType: String
     Value: "Program:Alexa_Tank.level_down"
 - Name: level_up
+  Id: g=c650488f623a25800a92abccb5f8c7b2
   Type: RAEtherNetIPTag
   DataType: Boolean
   Children:
@@ -58,6 +63,7 @@ Children:
     DataType: String
     Value: "Program:Alexa_Tank.Status_Level"
 - Name: stop_drain
+  Id: g=f5a59670ef6c8854d71658b7a8c77085
   Type: RAEtherNetIPTag
   DataType: Boolean
   Children:
@@ -66,6 +72,7 @@ Children:
     DataType: String
     Value: "Program:Alexa_Tank.stop_drain"
 - Name: Stop_fill
+  Id: g=01f016c57c1b818e98150719dc452f2f
   Type: RAEtherNetIPTag
   DataType: Boolean
   Children:

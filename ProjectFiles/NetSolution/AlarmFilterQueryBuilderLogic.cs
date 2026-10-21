@@ -6,6 +6,7 @@ using System.Text;
 using FTOptix.Alarm;
 using FTOptix.SerialPort;
 using FTOptix.SQLiteStore;
+using FTOptix.MQTTBroker;
 #endregion
 
 public class AlarmFilterQueryBuilderLogic : BaseNetLogic

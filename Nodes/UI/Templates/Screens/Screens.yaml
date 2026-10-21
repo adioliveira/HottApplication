@@ -46404,7 +46404,6 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: -1.0
     - Name: FillColor
       Type: BaseDataVariableType
       DataType: Color
@@ -48128,7 +48127,7 @@ Children:
     - Name: Station
       Type: Alias
       DataType: NodeId
-      Value: {"IdType":2,"Id":"00f10449c7e75286a1c228cd5d8a77d7","Namespace":7}
+      Value: "/Objects/HottApplication/CommDrivers/EIP_Driver/CLX01"
       Children:
       - Name: Kind
         Type: PropertyType
@@ -48165,7 +48164,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 582.0
+      Value: 580.0
   - Name: Label2
     Type: Label
     Children:
@@ -50067,10 +50066,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
+          Value: 3.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
+          Value: -3.0
         - Name: Width
           Type: BaseVariableType
           DataType: Size

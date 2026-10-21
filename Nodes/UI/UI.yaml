@@ -474,7 +474,7 @@ Children:
   - Name: MaxNumberOfWebConnections
     Type: BaseDataVariableType
     DataType: UInt32
-    Value: 100
+    Value: 10
   - Name: AllowedLocalSources
     Type: BaseDataVariableType
     DataType: String

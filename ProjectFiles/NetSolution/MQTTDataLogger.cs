@@ -24,6 +24,7 @@ using FTOptix.OPCUAServer;
 using FTOptix.Alarm;
 using FTOptix.SerialPort;
 using FTOptix.SQLiteStore;
+using FTOptix.MQTTBroker;
 #endregion
 
 public class MQTTDataLogger : BaseNetLogic

@@ -168,15 +168,23 @@ Project:
    Uri: 'urn:FTOptix:EventLogger:Net'
    Module: FTOptix.EventLogger.Net
    Version: 1.0
+  44:
+   Uri: 'urn:FTOptix:MQTTBroker'
+   Module: FTOptix.MQTTBroker
+   Version: 6.0
+  45:
+   Uri: 'urn:FTOptix:MQTTBroker:Net'
+   Module: FTOptix.MQTTBroker.Net
+   Version: 6.0
  Statistics:
-  TotalNodeCount: 269602
-  Objects: 6238
+  TotalNodeCount: 269727
+  Objects: 6247
   ObjectTypes: 107
-  Variables: 263080
+  Variables: 263196
   VariableTypes: 70
   DataTypes: 70
   Methods: 37
-  References: 536
+  References: 535
   ReferenceTypes: 0
   Files: 68
  Nodes:

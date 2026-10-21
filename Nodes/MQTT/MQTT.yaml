@@ -225,3 +225,483 @@ Children:
       ValueRank: OneDimension
       ArrayDimensions: [0]
       Value: [{"TypeId":{"Id":296},"Body":{"Name":"payload","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"tableNodeId","DataType":{"Id":17},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: BrokerAlexa
+  Type: MQTTBroker
+  Children:
+  - Name: ListenerPort
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 8883
+  - Name: MaxConnections
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 25
+  - Name: MaxQoS
+    Type: BaseDataVariableType
+    DataType: MaxQoSEnum
+  - Name: MaxInflightMessages
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 20
+  - Name: MaxQueuedMessages
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1000
+  - Name: MessageSizeLimit
+    Type: BaseDataVariableType
+    DataType: UInt32
+  - Name: RetainAvailable
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: DataPersistence
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: PersistentClientExpiration
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: AutosaveOnChanges
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutosaveInterval
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 20
+  - Name: AnonymousAuthentication
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: RequireClientCertificate
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: CACertificateFile
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: CertificateFile
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: CertificateKeyFile
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: Running
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+- Name: MQTTClientAlexa
+  Type: MQTTClient
+  Children:
+  - Name: BrokerAddress
+    Type: PropertyType
+    DataType: String
+    Value: "127.0.0.1"
+  - Name: BrokerPort
+    Type: PropertyType
+    DataType: UInt16
+    Value: 8883
+  - Name: ClientId
+    Type: PropertyType
+    DataType: String
+    Value: "optix_client"
+  - Name: ProtocolVersion
+    Type: BaseDataVariableType
+    DataType: ProtocolVersionEnum
+  - Name: Status
+    Type: BaseDataVariableType
+    DataType: StatusEnum
+    ReferenceType: HasProperty
+    AccessLevel: Read
+  - Name: UserIdentityType
+    Type: BaseDataVariableType
+    DataType: ns=32;UserIdentityTypeEnum
+  - Name: SSLTLSEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: ValidateBrokerCertificate
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: WillMessageEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: WillTopic
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: WillPayload
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: WillQoS
+    Type: BaseDataVariableType
+    DataType: QoSLevelEnum
+  - Name: WillRetain
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: WillDelayInterval
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Class: Reference
+    Target: ns=32;i=12
+    Direction: Forward
+  - Class: Reference
+    Target: ns=32;i=44
+    Direction: Forward
+  - Name: Subscriber_Tank
+    Type: MQTTSubscriber
+    Children:
+    - Name: Subscriptions
+      Type: BaseObjectType
+      Children:
+      - Name: PlainTextSubscription1
+        Type: SubscriptionPlainText
+        ReferenceType: HasOrderedComponent
+        Children:
+        - Name: Variable
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/HottApplication/CommDrivers/EIP_Driver/CLX01/Tags/Program&:Alexa_Tank/level"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType"
+        - Name: Topic
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "tank/level"
+        - Name: QoS
+          Type: BaseDataVariableType
+          DataType: QoSLevelEnum
+      - Name: PlainTextSubscription2
+        Type: SubscriptionPlainText
+        ReferenceType: HasOrderedComponent
+        Children:
+        - Name: Variable
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/HottApplication/CommDrivers/EIP_Driver/CLX01/Tags/Program&:Alexa_Tank/level_up"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType"
+        - Name: Topic
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "tank/levelUp"
+        - Name: QoS
+          Type: BaseDataVariableType
+          DataType: QoSLevelEnum
+      - Name: PlainTextSubscription3
+        Type: SubscriptionPlainText
+        ReferenceType: HasOrderedComponent
+        Children:
+        - Name: Variable
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/HottApplication/CommDrivers/EIP_Driver/CLX01/Tags/Program&:Alexa_Tank/level_down"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType"
+        - Name: Topic
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "tank/levelDown"
+        - Name: QoS
+          Type: BaseDataVariableType
+          DataType: QoSLevelEnum
+      - Name: PlainTextSubscription4
+        Type: SubscriptionPlainText
+        ReferenceType: HasOrderedComponent
+        Children:
+        - Name: Variable
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/HottApplication/CommDrivers/EIP_Driver/CLX01/Tags/Program&:Alexa_Tank/active_stop"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType"
+        - Name: Topic
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "tank/stopLevel"
+        - Name: QoS
+          Type: BaseDataVariableType
+          DataType: QoSLevelEnum
+    - Class: Reference
+      Target: ns=32;i=47
+      Direction: Forward
+  - Name: Publish_Tank
+    Type: MQTTPublisher
+    Children:
+    - Name: SamplingMode
+      Type: PropertyType
+      DataType: ns=32;SamplingModeEnum
+      Value: 2
+    - Name: Folder
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/HottApplication/CommDrivers/EIP_Driver/CLX01/Tags/Program&:Alexa_Tank"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/HottApplication/CommDrivers/EIP_Driver/CLX01/Tags/Program&:Alexa_Tank/level"
+    - Name: Topic
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "tank/level"
+    - Name: QoS
+      Type: BaseDataVariableType
+      DataType: QoSLevelEnum
+    - Name: Retain
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: PFEnabled
+      Type: PropertyType
+      DataType: Boolean
+    - Name: PayloadUpdateTimestamp
+      Type: BaseDataVariableType
+      DataType: ns=0;DateTime
+      ReferenceType: HasProperty
+      AccessLevel: Read
+    - Name: Item
+      Type: Alias
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/HottApplication/CommDrivers/EIP_Driver/CLX01/Tags/Program&:Alexa_Tank/level"
+    - Name: DataSource
+      Type: BaseDataVariableType
+      DataType: DataSourceEnum
+    - Name: DataLogger
+      Type: NodePointer
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/DataLogger"
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType/VariableToLog"
+    - Name: SFEnabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: SFBufferMaxSize
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 1000
+    - Name: SFBufferOverwrite
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: SFBufferUsage
+      Type: BaseDataVariableType
+      DataType: UInt32
+      AccessLevel: Read
+    - Name: SFBufferOverflow
+      Type: BaseDataVariableType
+      DataType: Boolean
+      AccessLevel: Read
+    - Name: EventLogger
+      Type: NodePointer
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/EventLogger"
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType/EventFieldToLog"
+  - Name: Publish_HighLimit
+    Type: MQTTPublisher
+    Children:
+    - Name: SamplingMode
+      Type: PropertyType
+      DataType: ns=32;SamplingModeEnum
+      Value: 2
+    - Name: Folder
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/HottApplication/CommDrivers/EIP_Driver/CLX01/Tags/Program&:Alexa_Tank"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/HottApplication/CommDrivers/EIP_Driver/CLX01/Tags/Program&:Alexa_Tank/Stop_fill"
+    - Name: Topic
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "tank/HighLimit"
+    - Name: QoS
+      Type: BaseDataVariableType
+      DataType: QoSLevelEnum
+    - Name: Retain
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: PFEnabled
+      Type: PropertyType
+      DataType: Boolean
+    - Name: PayloadUpdateTimestamp
+      Type: BaseDataVariableType
+      DataType: ns=0;DateTime
+      ReferenceType: HasProperty
+      AccessLevel: Read
+    - Name: Item
+      Type: Alias
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/HottApplication/CommDrivers/EIP_Driver/CLX01/Tags/Program&:Alexa_Tank/Stop_fill"
+    - Name: DataSource
+      Type: BaseDataVariableType
+      DataType: DataSourceEnum
+    - Name: DataLogger
+      Type: NodePointer
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/DataLogger"
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType/VariableToLog"
+    - Name: SFEnabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: SFBufferMaxSize
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 1000
+    - Name: SFBufferOverwrite
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: SFBufferUsage
+      Type: BaseDataVariableType
+      DataType: UInt32
+      AccessLevel: Read
+    - Name: SFBufferOverflow
+      Type: BaseDataVariableType
+      DataType: Boolean
+      AccessLevel: Read
+    - Name: EventLogger
+      Type: NodePointer
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/EventLogger"
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType/EventFieldToLog"
+  - Name: Publish_LowLimit
+    Type: MQTTPublisher
+    Children:
+    - Name: SamplingMode
+      Type: PropertyType
+      DataType: ns=32;SamplingModeEnum
+      Value: 2
+    - Name: Folder
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/HottApplication/CommDrivers/EIP_Driver/CLX01/Tags/Program&:Alexa_Tank"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/HottApplication/CommDrivers/EIP_Driver/CLX01/Tags/Program&:Alexa_Tank/stop_drain"
+    - Name: Topic
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "tank/LowLimit"
+    - Name: QoS
+      Type: BaseDataVariableType
+      DataType: QoSLevelEnum
+    - Name: Retain
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: PFEnabled
+      Type: PropertyType
+      DataType: Boolean
+    - Name: PayloadUpdateTimestamp
+      Type: BaseDataVariableType
+      DataType: ns=0;DateTime
+      ReferenceType: HasProperty
+      AccessLevel: Read
+    - Name: Item
+      Type: Alias
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/HottApplication/CommDrivers/EIP_Driver/CLX01/Tags/Program&:Alexa_Tank/stop_drain"
+    - Name: DataSource
+      Type: BaseDataVariableType
+      DataType: DataSourceEnum
+    - Name: DataLogger
+      Type: NodePointer
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/DataLogger"
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType/VariableToLog"
+    - Name: SFEnabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: SFBufferMaxSize
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 1000
+    - Name: SFBufferOverwrite
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: SFBufferUsage
+      Type: BaseDataVariableType
+      DataType: UInt32
+      AccessLevel: Read
+    - Name: SFBufferOverflow
+      Type: BaseDataVariableType
+      DataType: Boolean
+      AccessLevel: Read
+    - Name: EventLogger
+      Type: NodePointer
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/EventLogger"
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType/EventFieldToLog"
