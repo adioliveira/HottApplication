@@ -7,3 +7,4 @@ Children:
   DataType: String
   Value: "2MwEW6oG8aIokPT1hVMDRW08VjgKS0c2kCJchzDZoCZLKQWdsj4B4tPUd0uPj2RW3KfeXFne0x5whUQs86fhqA=="
 - File: OPCUAClientP101B/OPCUAClientP101B.yaml
+- File: OPCUAClientEEC/OPCUAClientEEC.yaml
