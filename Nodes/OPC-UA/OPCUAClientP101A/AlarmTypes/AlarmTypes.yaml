@@ -16,6 +16,9 @@ Children:
       Id: ns=35;g=31f1948a5cc1c3bb93f335b6bc84a362
       Type: PropertyType
       DataType: Boolean
+    - Class: Reference
+      Type: HasTrueSubState
+      Target: ns=0;i=9455
   - Name: LimitState
     Id: ns=35;g=bdea519857296efe9b6b992e0ec819e0
     Type: ExclusiveLimitStateMachineType
@@ -38,6 +41,12 @@ Children:
       Id: ns=35;g=724e22c402cd2af23d227feefd89a2c0
       Type: PropertyType
       DataType: Boolean
+    - Class: Reference
+      Type: HasTrueSubState
+      Target: ns=0;i=9160
+    - Class: Reference
+      Type: HasTrueSubState
+      Target: ns=0;i=9093
   - Name: InputNode
     Id: ns=35;g=4e0d75d7483fca94517124ae6e7d9a72
     Type: PropertyType
@@ -172,6 +181,12 @@ Children:
       Id: ns=35;g=0c6bd09dc39275cf74f8326041265c95
       Type: PropertyType
       DataType: Boolean
+    - Class: Reference
+      Type: HasTrueSubState
+      Target: ns=0;i=9160
+    - Class: Reference
+      Type: HasTrueSubState
+      Target: ns=0;i=9093
   - Name: ActiveState
     Id: ns=35;g=ee7b726377c98547e4467c976d1711f7
     Type: TwoStateVariableType

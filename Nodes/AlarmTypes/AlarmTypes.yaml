@@ -49,6 +49,9 @@ Children:
       - Name: Id
         Type: PropertyType
         DataType: Boolean
+    - Class: Reference
+      Type: HasTrueSubState
+      Target: ns=0;i=9093
   - Name: InputNode
     Type: PropertyType
     DataType: NodeId
@@ -163,6 +166,9 @@ Children:
       - Name: Id
         Type: PropertyType
         DataType: Boolean
+    - Class: Reference
+      Type: HasTrueSubState
+      Target: ns=0;i=9093
   - Name: ActiveState
     Type: TwoStateVariableType
     DataType: LocalizedText

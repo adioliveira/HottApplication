@@ -177,15 +177,15 @@ Project:
    Module: FTOptix.MQTTBroker.Net
    Version: 6.0
  Statistics:
-  TotalNodeCount: 269727
-  Objects: 6247
-  ObjectTypes: 107
-  Variables: 263196
+  TotalNodeCount: 269963
+  Objects: 6308
+  ObjectTypes: 108
+  Variables: 263370
   VariableTypes: 70
   DataTypes: 70
   Methods: 37
-  References: 535
+  References: 562
   ReferenceTypes: 0
-  Files: 68
+  Files: 71
  Nodes:
  - File: Nodes/HottApplication.yaml

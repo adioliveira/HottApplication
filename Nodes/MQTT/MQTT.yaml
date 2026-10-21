@@ -2,6 +2,7 @@ Name: MQTT
 Type: MQTTCategoryFolder
 Children:
 - Name: MQTTClient1
+  Id: g=ca1e5fa4f8fb27392523f452246f9dab
   Type: MQTTClient
   Children:
   - Name: BrokerAddress
@@ -705,3 +706,90 @@ Children:
         Type: PropertyType
         DataType: NodeId
         Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType/EventFieldToLog"
+- Name: MQTTClientEEC
+  Type: MQTTClient
+  Children:
+  - Name: BrokerAddress
+    Type: PropertyType
+    DataType: String
+    Value: "localhost"
+  - Name: BrokerPort
+    Type: PropertyType
+    DataType: UInt16
+    Value: 8883
+  - Name: ClientId
+    Type: PropertyType
+    DataType: String
+    Value: "FTOptix-1"
+  - Name: ProtocolVersion
+    Type: BaseDataVariableType
+    DataType: ProtocolVersionEnum
+  - Name: Status
+    Type: BaseDataVariableType
+    DataType: StatusEnum
+    ReferenceType: HasProperty
+    AccessLevel: Read
+  - Name: UserIdentityType
+    Type: BaseDataVariableType
+    DataType: ns=32;UserIdentityTypeEnum
+  - Name: SSLTLSEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: ValidateBrokerCertificate
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: WillMessageEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: WillTopic
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: WillPayload
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: WillQoS
+    Type: BaseDataVariableType
+    DataType: QoSLevelEnum
+  - Name: WillRetain
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: WillDelayInterval
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Class: Reference
+    Target: ns=32;i=12
+    Direction: Forward
+  - Class: Reference
+    Target: ns=32;i=44
+    Direction: Forward
+  - Name: MQTTSubscriber1
+    Type: MQTTSubscriber
+    Children:
+    - Name: Subscriptions
+      Type: BaseObjectType
+      Children:
+      - Name: DefaultJSONSubscription1
+        Type: Subscription
+        ReferenceType: HasOrderedComponent
+        Children:
+        - Name: Folder
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/HottApplication/Model/MQTT/Subscribe_From_EEC"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+        - Name: Topic
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "EEC"
+        - Name: QoS
+          Type: BaseDataVariableType
+          DataType: QoSLevelEnum
+    - Class: Reference
+      Target: ns=32;i=47
+      Direction: Forward

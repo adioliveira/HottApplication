@@ -57,18 +57,19 @@ Project:
    Module: FTOptix.Core.Net
    Version: 3.0
  Statistics:
-  TotalNodeCount: 17
-  Objects: 4
+  TotalNodeCount: 21
+  Objects: 5
   ObjectTypes: 0
-  Variables: 13
+  Variables: 16
   VariableTypes: 0
   DataTypes: 0
   Methods: 0
   References: 0
   ReferenceTypes: 0
-  Files: 4
+  Files: 5
  Nodes:
  - File: DesignTimeNodes/CommDrivers/EIP_Driver/CLX01/TagImporter.yaml
  - File: DesignTimeNodes/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/TagImporter.yaml
+ - File: 'DesignTimeNodes/OPC-UA/OPCUAClientEEC/OPCUATagImporter.yaml'
  - File: 'DesignTimeNodes/OPC-UA/OPCUAClientP101A/OPCUATagImporter.yaml'
  - File: 'DesignTimeNodes/OPC-UA/OPCUAClientP101B/OPCUATagImporter.yaml'
