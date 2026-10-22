@@ -1,0 +1,403 @@
+Name: TurbineDemo
+Type: FolderType
+Children:
+- Name: windTurbineModel2
+  Id: g=298f2cf7e5994757200db91be0b0a275
+  Type: windTurbineModel_Main
+  Children:
+  - Name: id
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: location
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: latitude
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: longitude
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: manufacturer
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: model
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Installed_at
+    Type: BaseDataVariableType
+    DataType: DateTime1
+  - Name: status
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: max_capacity
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: blade_lenght
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: rotor_diameter
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: created_at
+    Type: BaseDataVariableType
+    DataType: DateTime1
+  - Name: updated_at
+    Type: BaseDataVariableType
+    DataType: DateTime1
+  - Name: PLCData
+    Type: BaseDataVariableType
+    DataType: windTurbineUDT
+    Children:
+    - Name: DynamicLink_field.at(0)
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../CommDrivers/EIP_Driver/CLX01/Tags/Controller Tags/windTurbine2/id"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+      - Name: ParentElementAccess
+        Type: BaseVariableType
+        DataType: ElementAccess
+        Value: 
+         {
+          "TypeId": {
+           "Id": 313,
+           "Namespace": 1
+          },
+          "Body": {
+           "ArrayIndex": [],
+           "FieldIndexes": [{
+             "TypeId": {
+              "Id": 311,
+              "Namespace": 1
+             },
+             "Body": {
+              "FieldPos": 0,
+              "ArrayIndex": []
+             }
+            }]
+          }
+         }
+    - Name: DynamicLink_field.at(6)
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../CommDrivers/EIP_Driver/CLX01/Tags/Controller Tags/windTurbine2/vibration_level"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+      - Name: ParentElementAccess
+        Type: BaseVariableType
+        DataType: ElementAccess
+        Value: 
+         {
+          "TypeId": {
+           "Id": 313,
+           "Namespace": 1
+          },
+          "Body": {
+           "ArrayIndex": [],
+           "FieldIndexes": [{
+             "TypeId": {
+              "Id": 311,
+              "Namespace": 1
+             },
+             "Body": {
+              "FieldPos": 6,
+              "ArrayIndex": []
+             }
+            }]
+          }
+         }
+    - Name: DynamicLink_field.at(1)
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../CommDrivers/EIP_Driver/CLX01/Tags/Controller Tags/windTurbine2/turbine_id"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+      - Name: ParentElementAccess
+        Type: BaseVariableType
+        DataType: ElementAccess
+        Value: 
+         {
+          "TypeId": {
+           "Id": 313,
+           "Namespace": 1
+          },
+          "Body": {
+           "ArrayIndex": [],
+           "FieldIndexes": [{
+             "TypeId": {
+              "Id": 311,
+              "Namespace": 1
+             },
+             "Body": {
+              "FieldPos": 1,
+              "ArrayIndex": []
+             }
+            }]
+          }
+         }
+    - Name: DynamicLink_field.at(5)
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../CommDrivers/EIP_Driver/CLX01/Tags/Controller Tags/windTurbine2/gearbox_temp"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+      - Name: ParentElementAccess
+        Type: BaseVariableType
+        DataType: ElementAccess
+        Value: 
+         {
+          "TypeId": {
+           "Id": 313,
+           "Namespace": 1
+          },
+          "Body": {
+           "ArrayIndex": [],
+           "FieldIndexes": [{
+             "TypeId": {
+              "Id": 311,
+              "Namespace": 1
+             },
+             "Body": {
+              "FieldPos": 5,
+              "ArrayIndex": []
+             }
+            }]
+          }
+         }
+    - Name: DynamicLink_field.at(4)
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../CommDrivers/EIP_Driver/CLX01/Tags/Controller Tags/windTurbine2/generator_temp"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+      - Name: ParentElementAccess
+        Type: BaseVariableType
+        DataType: ElementAccess
+        Value: 
+         {
+          "TypeId": {
+           "Id": 313,
+           "Namespace": 1
+          },
+          "Body": {
+           "ArrayIndex": [],
+           "FieldIndexes": [{
+             "TypeId": {
+              "Id": 311,
+              "Namespace": 1
+             },
+             "Body": {
+              "FieldPos": 4,
+              "ArrayIndex": []
+             }
+            }]
+          }
+         }
+    - Name: DynamicLink_field.at(2)
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../CommDrivers/EIP_Driver/CLX01/Tags/Controller Tags/windTurbine2/power_output"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+      - Name: ParentElementAccess
+        Type: BaseVariableType
+        DataType: ElementAccess
+        Value: 
+         {
+          "TypeId": {
+           "Id": 313,
+           "Namespace": 1
+          },
+          "Body": {
+           "ArrayIndex": [],
+           "FieldIndexes": [{
+             "TypeId": {
+              "Id": 311,
+              "Namespace": 1
+             },
+             "Body": {
+              "FieldPos": 2,
+              "ArrayIndex": []
+             }
+            }]
+          }
+         }
+    - Name: DynamicLink_field.at(3)
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../CommDrivers/EIP_Driver/CLX01/Tags/Controller Tags/windTurbine2/rotor_speed"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+      - Name: ParentElementAccess
+        Type: BaseVariableType
+        DataType: ElementAccess
+        Value: 
+         {
+          "TypeId": {
+           "Id": 313,
+           "Namespace": 1
+          },
+          "Body": {
+           "ArrayIndex": [],
+           "FieldIndexes": [{
+             "TypeId": {
+              "Id": 311,
+              "Namespace": 1
+             },
+             "Body": {
+              "FieldPos": 3,
+              "ArrayIndex": []
+             }
+            }]
+          }
+         }
+    - Name: DynamicLink_field.at(7)
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../CommDrivers/EIP_Driver/CLX01/Tags/Controller Tags/windTurbine2/voltage"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+      - Name: ParentElementAccess
+        Type: BaseVariableType
+        DataType: ElementAccess
+        Value: 
+         {
+          "TypeId": {
+           "Id": 313,
+           "Namespace": 1
+          },
+          "Body": {
+           "ArrayIndex": [],
+           "FieldIndexes": [{
+             "TypeId": {
+              "Id": 311,
+              "Namespace": 1
+             },
+             "Body": {
+              "FieldPos": 7,
+              "ArrayIndex": []
+             }
+            }]
+          }
+         }
+    - Name: DynamicLink_field.at(8)
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../CommDrivers/EIP_Driver/CLX01/Tags/Controller Tags/windTurbine2/current"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+      - Name: ParentElementAccess
+        Type: BaseVariableType
+        DataType: ElementAccess
+        Value: 
+         {
+          "TypeId": {
+           "Id": 313,
+           "Namespace": 1
+          },
+          "Body": {
+           "ArrayIndex": [],
+           "FieldIndexes": [{
+             "TypeId": {
+              "Id": 311,
+              "Namespace": 1
+             },
+             "Body": {
+              "FieldPos": 8,
+              "ArrayIndex": []
+             }
+            }]
+          }
+         }
+    - Name: DynamicLink_field.at(9)
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../CommDrivers/EIP_Driver/CLX01/Tags/Controller Tags/windTurbine2/error_code"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+      - Name: ParentElementAccess
+        Type: BaseVariableType
+        DataType: ElementAccess
+        Value: 
+         {
+          "TypeId": {
+           "Id": 313,
+           "Namespace": 1
+          },
+          "Body": {
+           "ArrayIndex": [],
+           "FieldIndexes": [{
+             "TypeId": {
+              "Id": 311,
+              "Namespace": 1
+             },
+             "Body": {
+              "FieldPos": 9,
+              "ArrayIndex": []
+             }
+            }]
+          }
+         }
+  - Name: weatherData
+    Type: windTurbineModel_weatherData
+    Children:
+    - Name: timestamp
+      Type: BaseDataVariableType
+      DataType: DateTime1
+    - Name: wind_speed
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: wind_direction
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: temperature
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: humidity
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: pressure
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: weather_condition
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: api_source
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: created_at
+      Type: BaseDataVariableType
+      DataType: DateTime1

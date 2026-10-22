@@ -70,3 +70,7 @@ Children:
   Type: PropertyGroup
 - File: AlarmTypes/AlarmTypes.yaml
 - File: HighAvailability/HighAvailability.yaml
+- Class: DataType
+  Name: DateTime1
+  Id: g=4d90bc1936f5aef9669e3d39d3bdf262
+  Supertype: ns=0;DateTime

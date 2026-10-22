@@ -414,3 +414,113 @@ Children:
   - Name: Station
     Type: BaseDataVariableType
     DataType: String
+- Name: windTurbineModel_weatherData
+  Id: g=fbe40ded6d6610edb4323bfc3f2effb5
+  Supertype: BaseObjectType
+  Children:
+  - Name: timestamp
+    Type: BaseDataVariableType
+    DataType: DateTime1
+  - Name: wind_speed
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: wind_direction
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: temperature
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: humidity
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: pressure
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: weather_condition
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: api_source
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: created_at
+    Type: BaseDataVariableType
+    DataType: DateTime1
+- Name: windTurbineModel_Main
+  Id: g=5a8671bab920681a732d4eba75aec1c1
+  Supertype: BaseObjectType
+  Children:
+  - Name: id
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: location
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: latitude
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: longitude
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: manufacturer
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: model
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Installed_at
+    Type: BaseDataVariableType
+    DataType: DateTime1
+  - Name: status
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: max_capacity
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: blade_lenght
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: rotor_diameter
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: created_at
+    Type: BaseDataVariableType
+    DataType: DateTime1
+  - Name: updated_at
+    Type: BaseDataVariableType
+    DataType: DateTime1
+  - Name: PLCData
+    Type: BaseDataVariableType
+    DataType: windTurbineUDT
+  - Name: weatherData
+    Type: windTurbineModel_weatherData
+    Children:
+    - Name: timestamp
+      Type: BaseDataVariableType
+      DataType: DateTime1
+    - Name: wind_speed
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: wind_direction
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: temperature
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: humidity
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: pressure
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: weather_condition
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: api_source
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: created_at
+      Type: BaseDataVariableType
+      DataType: DateTime1
