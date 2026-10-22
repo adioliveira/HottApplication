@@ -414,7 +414,6 @@ Children:
   ValueRank: Any
   Children:
   - Name: PAxDevice
-    Id: g=1ea911ea41dd7484221feb2db5d361ce
     Type: 'PAX_HART_DEVICE:I:0'
     DataType: 'PAX_HART_DEVICE:I:0'
     Children:
@@ -499,7 +498,6 @@ Children:
         DataType: String
         Value: "Malfunction"
     - Name: LoopCurrent
-      Id: g=ecc998f3a032f43e667ecddad8ed7520
       Type: 'CHANNEL_AI:I:0'
       DataType: 'CHANNEL_AI:I:0'
       Children:
@@ -552,12 +550,10 @@ Children:
           DataType: String
           Value: "RollingTimestamp"
     - Name: PV
-      Id: g=e85ae2ad865633c8c24d4ad83e38dcf1
       Type: 'CHANNEL_AI_HART:I:0'
       DataType: 'CHANNEL_AI_HART:I:0'
       Children:
       - Name: Ch
-        Id: g=771c11003a97933f663ed0dbd1f05381
         Type: 'CHANNEL_AI:I:0'
         DataType: 'CHANNEL_AI:I:0'
         Children:
@@ -642,12 +638,10 @@ Children:
           DataType: String
           Value: "Constant"
     - Name: SV
-      Id: g=e7e77b5c62b0d9c438e9ced92d527709
       Type: 'CHANNEL_AI_HART:I:0'
       DataType: 'CHANNEL_AI_HART:I:0'
       Children:
       - Name: Ch
-        Id: g=c7092266c153ef3a8c5ac8c2eac5319e
         Type: 'CHANNEL_AI:I:0'
         DataType: 'CHANNEL_AI:I:0'
         Children:
@@ -732,12 +726,10 @@ Children:
           DataType: String
           Value: "Constant"
     - Name: TV
-      Id: g=92e957f74fcaff4079e2d831b735cd99
       Type: 'CHANNEL_AI_HART:I:0'
       DataType: 'CHANNEL_AI_HART:I:0'
       Children:
       - Name: Ch
-        Id: g=93735dd65f7078b0d5402b203042c838
         Type: 'CHANNEL_AI:I:0'
         DataType: 'CHANNEL_AI:I:0'
         Children:
@@ -822,12 +814,10 @@ Children:
           DataType: String
           Value: "Constant"
     - Name: QV
-      Id: g=f3894b4871cda7a709578a910a5f975c
       Type: 'CHANNEL_AI_HART:I:0'
       DataType: 'CHANNEL_AI_HART:I:0'
       Children:
       - Name: Ch
-        Id: g=c49d4022d7e26aafa7cd19feca65ab17
         Type: 'CHANNEL_AI:I:0'
         DataType: 'CHANNEL_AI:I:0'
         Children:
@@ -912,7 +902,6 @@ Children:
           DataType: String
           Value: "Constant"
     - Name: Static
-      Id: g=537b425bc9d9028f43c5c5873036c9e2
       Type: 'AB:5000_HART_Static_Struct:I:0'
       DataType: 'AB:5000_HART_Static_Struct:I:0'
       Children:
@@ -1285,7 +1274,6 @@ Children:
       DataType: String
       Value: "Wrk_F"
   - Name: Wrk_DT
-    Id: g=504ae8595a301058beaa20f02b8de04a
     Type: DateTime
     DataType: ns=7;DateTime
     Children:
@@ -3128,7 +3116,6 @@ Children:
       DataType: String
       Value: "XRdy_ResetAckAll"
   - Name: CmdSrc
-    Id: g=04a93f173a32d95b9de9140e98d406eb
     Type: P_COMMAND_SOURCE
     DataType: P_COMMAND_SOURCE
     Children:
@@ -4176,7 +4163,6 @@ Children:
     Type: FolderType
     Children:
     - Name: Alm_ActuatorFault
-      Id: g=2d8adc7e54988044db33babb8c40ce1a
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -4565,7 +4551,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_FullStall
-      Id: g=3b14792551163e3da32420a7bbaff05a
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -4954,7 +4939,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_IntlkTrip
-      Id: g=500b3c89d47f0f5635feaccc6d44493f
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -5343,7 +5327,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_IOFault
-      Id: g=b006d30965e36c8a7aa6ee52f68ac24b
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -5732,7 +5715,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_LossPos2
-      Id: g=f765c1b231029ac0fe672adaf4bbd676
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -6121,7 +6103,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_LossPos1
-      Id: g=4c1edcc8c5df1de0ebbaa51da63c69ba
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -6510,7 +6491,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_TransitStall
-      Id: g=c565c36d394b40a46a07d152d4593f53
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -6899,7 +6879,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_TripFail
-      Id: g=cced5d3eef1f9fb237a8dfe7ac123965
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -7288,7 +7267,6 @@ Children:
           DataType: String
           Value: "Overflow"
   - Name: '@AlarmSet'
-    Id: g=8edab7be48a4c70cff4ffaed406a1f5c
     Type: ALARM_SET
     DataType: ALARM_SET
     Children:
@@ -8521,7 +8499,6 @@ Children:
   ValueRank: Any
   Children:
   - Name: Ch
-    Id: g=b10818b0bdb01030de998daf1cc7e543
     Type: 'CHANNEL_AI:I:0'
     DataType: 'CHANNEL_AI:I:0'
     Children:
@@ -9058,7 +9035,6 @@ Children:
       DataType: String
       Value: "Wrk_F"
   - Name: Wrk_Now
-    Id: g=c473c698a757af027cc5c312d468f200
     Type: DateTime
     DataType: ns=7;DateTime
     Children:
@@ -9127,7 +9103,6 @@ Children:
       DataType: String
       Value: "Wrk_NowDoW"
   - Name: Wrk_SoST
-    Id: g=4a2d5de92041d65be6939246319a895b
     Type: DateTime
     DataType: ns=7;DateTime
     Children:
@@ -9188,7 +9163,6 @@ Children:
         DataType: String
         Value: "uSec"
   - Name: Wrk_EoDST
-    Id: g=e6aabce39dcd308e3ec05587026c008e
     Type: DateTime
     DataType: ns=7;DateTime
     Children:
@@ -9249,7 +9223,6 @@ Children:
         DataType: String
         Value: "uSec"
   - Name: Wrk_EoST
-    Id: g=aed18c5f6c45909c11fd27a85ec3210c
     Type: DateTime
     DataType: ns=7;DateTime
     Children:
@@ -9310,7 +9283,6 @@ Children:
         DataType: String
         Value: "uSec"
   - Name: Wrk_T_ADD2
-    Id: g=16afc65556116b27d70a56b0e6ca2f91
     Type: T_ADD
     DataType: T_ADD
     Children:
@@ -9427,7 +9399,6 @@ Children:
         DataType: String
         Value: "Wrk_ddd"
   - Name: Wrk_T_ADD5
-    Id: g=1e75cf5ed5f1d32653d838369840ca15
     Type: T_ADD
     DataType: T_ADD
     Children:
@@ -9544,7 +9515,6 @@ Children:
         DataType: String
         Value: "Wrk_ddd"
   - Name: Wrk_T_ADD1
-    Id: g=ae3acb672570e99d14d9e5f2c4bfdcd6
     Type: T_ADD
     DataType: T_ADD
     Children:
@@ -9661,7 +9631,6 @@ Children:
         DataType: String
         Value: "Wrk_ddd"
   - Name: Wrk_Days
-    Id: g=fb0b7d418229fb271b8e84176e9674cb
     Type: DateTime
     DataType: ns=7;DateTime
     Children:
@@ -9722,7 +9691,6 @@ Children:
         DataType: String
         Value: "uSec"
   - Name: Wrk_Fwd1
-    Id: g=1c39da112cdb9779552ec67a2982c43d
     Type: DateTime
     DataType: ns=7;DateTime
     Children:
@@ -9783,7 +9751,6 @@ Children:
         DataType: String
         Value: "uSec"
   - Name: Wrk_Back1
-    Id: g=a3fb4ff811a98b526fb818ffa12cf6c1
     Type: DateTime
     DataType: ns=7;DateTime
     Children:
@@ -9900,7 +9867,6 @@ Children:
       DataType: String
       Value: "Wrk_DST_ONS"
   - Name: Wrk_Offset
-    Id: g=1e9ba0bbea11578e2a0423cf0dcfb14f
     Type: DateTime
     DataType: ns=7;DateTime
     Children:
@@ -10001,7 +9967,6 @@ Children:
       DataType: String
       Value: "Wrk_Back2DoW"
   - Name: Wrk_Back2
-    Id: g=f6a0e06f6fdce67430757293dc6bdfbf
     Type: DateTime
     DataType: ns=7;DateTime
     Children:
@@ -10062,7 +10027,6 @@ Children:
         DataType: String
         Value: "uSec"
   - Name: Wrk_Fwd2
-    Id: g=cffd00f068c6a87423e0743cfb63c954
     Type: DateTime
     DataType: ns=7;DateTime
     Children:
@@ -10123,7 +10087,6 @@ Children:
         DataType: String
         Value: "uSec"
   - Name: Wrk_T_ADD4
-    Id: g=27afc57324041c840d85ec552bbaa60c
     Type: T_ADD
     DataType: T_ADD
     Children:
@@ -10240,7 +10203,6 @@ Children:
         DataType: String
         Value: "Wrk_ddd"
   - Name: Wrk_T_ADD3
-    Id: g=91f7cccf87f60f7b08d725dd36443755
     Type: T_ADD
     DataType: T_ADD
     Children:
@@ -10363,7 +10325,6 @@ Children:
   ValueRank: Any
   Children:
   - Name: Ch00
-    Id: g=22c36432354742c4771498b721a23c82
     Type: 'CHANNEL_AI:O:0'
     DataType: 'CHANNEL_AI:O:0'
     Children:
@@ -10456,7 +10417,6 @@ Children:
         DataType: String
         Value: "SensorOffset"
   - Name: Ch01
-    Id: g=265c3881d4dde55af244033e274f4b92
     Type: 'CHANNEL_AI:O:0'
     DataType: 'CHANNEL_AI:O:0'
     Children:
@@ -10549,7 +10509,6 @@ Children:
         DataType: String
         Value: "SensorOffset"
   - Name: Ch02
-    Id: g=70b741b61661e759e844122ed007c4ab
     Type: 'CHANNEL_AI:O:0'
     DataType: 'CHANNEL_AI:O:0'
     Children:
@@ -10642,7 +10601,6 @@ Children:
         DataType: String
         Value: "SensorOffset"
   - Name: Ch03
-    Id: g=7454442c201d73ad5fd7836857706044
     Type: 'CHANNEL_AI:O:0'
     DataType: 'CHANNEL_AI:O:0'
     Children:
@@ -10735,7 +10693,6 @@ Children:
         DataType: String
         Value: "SensorOffset"
   - Name: Ch04
-    Id: g=0cea226d84f16b65a06c04f99d75fe1b
     Type: 'CHANNEL_AI:O:0'
     DataType: 'CHANNEL_AI:O:0'
     Children:
@@ -10828,7 +10785,6 @@ Children:
         DataType: String
         Value: "SensorOffset"
   - Name: Ch05
-    Id: g=90e73ab795b0ddd01703b52d183501fd
     Type: 'CHANNEL_AI:O:0'
     DataType: 'CHANNEL_AI:O:0'
     Children:
@@ -10921,7 +10877,6 @@ Children:
         DataType: String
         Value: "SensorOffset"
   - Name: Ch06
-    Id: g=61d21093e041625c932b8abfc3b0d358
     Type: 'CHANNEL_AI:O:0'
     DataType: 'CHANNEL_AI:O:0'
     Children:
@@ -11014,7 +10969,6 @@ Children:
         DataType: String
         Value: "SensorOffset"
   - Name: Ch07
-    Id: g=8ac47346769cc759e0c3c6ce336a6c4b
     Type: 'CHANNEL_AI:O:0'
     DataType: 'CHANNEL_AI:O:0'
     Children:
@@ -11303,7 +11257,6 @@ Children:
       DataType: String
       Value: "Cfg_CnfrmReqd"
   - Name: Obj
-    Id: g=057c8204842ce48e2eb6179e5cf55e5a
     Type: BUS_OBJ
     DataType: BUS_OBJ
     Children:
@@ -11420,7 +11373,6 @@ Children:
         DataType: String
         Value: "Ref_Index"
   - Name: Own
-    Id: g=beb45dde5848370ba59d54575ab077ea
     Type: raP_Opr_Owner
     DataType: raP_Opr_Owner
     Children:
@@ -13935,7 +13887,6 @@ Children:
       DataType: String
       Value: "Val_Owner"
   - Name: Wrk_StopT
-    Id: g=1153dff60a048118916a23c8e673f08b
     Type: TIMER
     DataType: TIMER
     Children:
@@ -13980,7 +13931,6 @@ Children:
         DataType: String
         Value: "DN"
   - Name: Wrk_StartT
-    Id: g=2b23dc8041702d90baa702549cce3ade
     Type: TIMER
     DataType: TIMER
     Children:
@@ -14281,7 +14231,6 @@ Children:
       DataType: String
       Value: "MCmd_Acq"
   - Name: CmdSrc
-    Id: g=265e95ec1cf1d51ab55fdcbe5ae806e2
     Type: P_COMMAND_SOURCE
     DataType: P_COMMAND_SOURCE
     Children:
@@ -14945,7 +14894,6 @@ Children:
     Type: FolderType
     Children:
     - Name: Alm_FailToStart
-      Id: g=486a481218cead7e53dc6c7cfbb5640c
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -15334,7 +15282,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_IntlkTrip
-      Id: g=1dbeb429277baa63fecaa28fc88bab9c
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -15723,7 +15670,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_DriveFault
-      Id: g=32cd608d9f5ed0ac41834702d1a7d983
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -16112,7 +16058,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_FailToStop
-      Id: g=83eab74bdae9a6389dd0105947a36b59
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -16501,7 +16446,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_IOFault
-      Id: g=964175aa09e6b098fcc0f1f266939a9f
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -16890,7 +16834,6 @@ Children:
           DataType: String
           Value: "Overflow"
   - Name: '@AlarmSet'
-    Id: g=9a1d5beaf866c4122fdd0c06566bf6ee
     Type: ALARM_SET
     DataType: ALARM_SET
     Children:
@@ -17161,7 +17104,6 @@ Children:
   ValueRank: Any
   Children:
   - Name: Enum
-    Id: g=69a445917585bf5ce41d649198a264d1
     Type: raP_UDT_Opr_System_Enum
     DataType: raP_UDT_Opr_System_Enum
     Children:
@@ -17186,7 +17128,6 @@ Children:
         DataType: String
         Value: "Materials"
   - Name: Proj
-    Id: g=bdb1156fc4d4764250407d9776bbfe49
     Type: raP_UDT_Opr_System_Proj
     DataType: raP_UDT_Opr_System_Proj
     Children:
@@ -17239,7 +17180,6 @@ Children:
         DataType: String
         Value: "Softlogix"
   - Name: Sts
-    Id: g=db7a2ff02aa552cabea6935b284f8dfc
     Type: raP_UDT_Opr_System_Status
     DataType: raP_UDT_Opr_System_Status
     Children:
@@ -17725,7 +17665,6 @@ Children:
     Type: FolderType
     Children:
     - Name: Alm_ChangeDetected
-      Id: g=eb010112159b629ef051a04f7f9f45c8
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -18114,7 +18053,6 @@ Children:
           DataType: String
           Value: "Overflow"
   - Name: '@AlarmSet'
-    Id: g=1d3d1776f89ff2de7b2edabf370b7df8
     Type: ALARM_SET
     DataType: ALARM_SET
     Children:
@@ -18269,14 +18207,12 @@ Children:
       DataType: String
       Value: "Sts_Err"
   - Name: HMI
-    Id: g=915075cc161bd7c794106279b8e03b78
     Type: RAEtherNetIPTagStructure
     DataType: raP_UDT_Opr_Bus_View
     ValueRank: OneDimension
     ArrayDimensions: [25]
     Children:
     - Name: 0
-      Id: g=cdc72203cc62b36c72457e83d5e81183
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -18409,7 +18345,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 1
-      Id: g=62dbfc0bad94a2b0a66cafae1ee74507
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -18542,7 +18477,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 2
-      Id: g=a88b233d65997e2b8332e6b23f129560
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -18675,7 +18609,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 3
-      Id: g=b7f05edc8d0c686070b95ea4e0e99690
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -18808,7 +18741,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 4
-      Id: g=67a0815f6077ad7658ace423f60e734d
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -18941,7 +18873,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 5
-      Id: g=f39d4d383897bb667689ad2c44c58fe4
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -19074,7 +19005,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 6
-      Id: g=3e3ce2ff6ddf205017a3a69540afc3b0
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -19207,7 +19137,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 7
-      Id: g=bb84170f403d9ca998600071960947aa
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -19340,7 +19269,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 8
-      Id: g=68c0a36675ef39faece995705cecfde4
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -19473,7 +19401,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 9
-      Id: g=79c8ad23886ebba530e20afd5f55b8ea
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -19606,7 +19533,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 10
-      Id: g=be88f283cd611f37fba3d45f1c2c329a
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -19739,7 +19665,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 11
-      Id: g=21ed4c70a3d155e591a7d2b5606d9be0
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -19872,7 +19797,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 12
-      Id: g=c0c23c12ea1f3a05807b8b335363ce04
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -20005,7 +19929,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 13
-      Id: g=8906003b2a63be572910e2940eb7cbfe
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -20138,7 +20061,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 14
-      Id: g=7b4b88cc84ddcbcef33fdc7f628bf963
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -20271,7 +20193,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 15
-      Id: g=116a3bdf4ce382eb29a96f51081bdbf3
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -20404,7 +20325,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 16
-      Id: g=4825617aff0d4ef91e35614beee2d7f7
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -20537,7 +20457,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 17
-      Id: g=53efbbd76d1a348d02a76b7a97fa5f9e
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -20670,7 +20589,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 18
-      Id: g=35a84335f0e2ae3fabe74ed9491814db
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -20803,7 +20721,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 19
-      Id: g=b3428fab290a10651401dba32b04cf58
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -20936,7 +20853,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 20
-      Id: g=ebc82c7aef74d1d1ab41c9174e7e62a4
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -21069,7 +20985,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 21
-      Id: g=a0839c78aa626d38102c30dcb44ef5c6
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -21202,7 +21117,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 22
-      Id: g=e62be41675d0afa2d2d75fe9ff7a5e38
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -21335,7 +21249,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 23
-      Id: g=ea8d98eca0547f22ba45cf8fa58d9817
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -21468,7 +21381,6 @@ Children:
           DataType: String
           Value: "OwnerBusIndex"
     - Name: 24
-      Id: g=ea2bd4f4bd9d16a60c272851a2c23ec3
       Type: raP_UDT_Opr_Bus_View
       DataType: raP_UDT_Opr_Bus_View
       Children:
@@ -23663,7 +23575,6 @@ Children:
   ValueRank: Any
   Children:
   - Name: Identity
-    Id: g=1325f862c4714aacdac55ae8cb5c7415
     Type: raP_UDT_Dvc_LgxCPU_5x80_Identity
     DataType: raP_UDT_Dvc_LgxCPU_5x80_Identity
     Children:
@@ -23734,7 +23645,6 @@ Children:
         DataType: String
         Value: "Status"
   - Name: TrendUse
-    Id: g=841af9d0361d101388a76fd70862012f
     Type: raP_UDT_Dvc_LgxCPU_5x80_TrendUse
     DataType: raP_UDT_Dvc_LgxCPU_5x80_TrendUse
     Children:
@@ -23763,7 +23673,6 @@ Children:
         DataType: String
         Value: "TrendHighWater"
   - Name: CtrlUse
-    Id: g=22fc5aac07da05886ed7b54ccd55292b
     Type: raP_UDT_Dvc_LgxCPU_5x80_TaskUse
     DataType: raP_UDT_Dvc_LgxCPU_5x80_TaskUse
     Children:
@@ -23808,7 +23717,6 @@ Children:
         DataType: String
         Value: "User"
   - Name: CoreUse
-    Id: g=d8cd1c1b94db105f499cad7f52bd54ad
     Type: raP_UDT_Dvc_LgxCPU_5x80_CoreUse
     DataType: raP_UDT_Dvc_LgxCPU_5x80_CoreUse
     Children:
@@ -23877,7 +23785,6 @@ Children:
         DataType: String
         Value: "Core3Pct"
   - Name: ConnUse
-    Id: g=932bddba8db8892071422a86355b3b1d
     Type: raP_UDT_Dvc_LgxCPU_5x80_ConnUse
     DataType: raP_UDT_Dvc_LgxCPU_5x80_ConnUse
     Children:
@@ -24200,7 +24107,6 @@ Children:
       DataType: String
       Value: "eState"
   - Name: FirstWarning
-    Id: g=92f0fae836998d9cf94f00a6484ad196
     Type: RAC_EVENT
     DataType: RAC_EVENT
     Children:
@@ -24271,7 +24177,6 @@ Children:
         DataType: String
         Value: "EventTime_D"
   - Name: FirstFault
-    Id: g=5352826ad381cc834dd232722c5761ba
     Type: RAC_EVENT
     DataType: RAC_EVENT
     Children:
@@ -26748,7 +26653,6 @@ Children:
       DataType: String
       Value: "MCmd_Acq"
   - Name: CmdSrc
-    Id: g=a1e21adf619dcdeee012b5018e69fa2d
     Type: P_COMMAND_SOURCE
     DataType: P_COMMAND_SOURCE
     Children:
@@ -27396,7 +27300,6 @@ Children:
     Type: FolderType
     Children:
     - Name: Alm_FailToStart
-      Id: g=579295dc545447c8b3ed1e60b8cfec53
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -27785,7 +27688,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_IntlkTrip
-      Id: g=3d6369aa7b201b48b42af6999acd8c9f
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -28174,7 +28076,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_MotorFault
-      Id: g=749f57c6c3308e01992cf0ecafc9ae7f
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -28563,7 +28464,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_FailToStop
-      Id: g=f55a6b4d3305fb9bafedd53041b83a19
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -28952,7 +28852,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_IOFault
-      Id: g=d5c80932064c6ad743ae9ee1f2e056bc
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -29341,7 +29240,6 @@ Children:
           DataType: String
           Value: "Overflow"
   - Name: '@AlarmSet'
-    Id: g=0ad6e0b9676b6c64b8f9f709cab9c890
     Type: ALARM_SET
     DataType: ALARM_SET
     Children:
@@ -30129,7 +30027,6 @@ Children:
     Type: FolderType
     Children:
     - Name: Alm_OverPlan
-      Id: g=947b5c06355a87a63c285e12c480ae24
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -30518,7 +30415,6 @@ Children:
           DataType: String
           Value: "Overflow"
   - Name: '@AlarmSet'
-    Id: g=a040b6de10d49a25ae822bdaca273062
     Type: ALARM_SET
     DataType: ALARM_SET
     Children:
@@ -30667,7 +30563,6 @@ Children:
       DataType: String
       Value: "DiagnosticSequenceCount"
   - Name: Ch00
-    Id: g=a44d8810b666d3ef2be9cb8caf4f77ba
     Type: 'CHANNEL_AI_DIAG:I:0'
     DataType: 'CHANNEL_AI_DIAG:I:0'
     Children:
@@ -30808,7 +30703,6 @@ Children:
         DataType: String
         Value: "RollingTimestamp"
   - Name: Ch01
-    Id: g=cedfa519e695d1db2faaf33a636c63dc
     Type: 'CHANNEL_AI_DIAG:I:0'
     DataType: 'CHANNEL_AI_DIAG:I:0'
     Children:
@@ -30949,7 +30843,6 @@ Children:
         DataType: String
         Value: "RollingTimestamp"
   - Name: Ch02
-    Id: g=01fbd66b7edce21e634520ac4a3b777d
     Type: 'CHANNEL_AI_DIAG:I:0'
     DataType: 'CHANNEL_AI_DIAG:I:0'
     Children:
@@ -31090,7 +30983,6 @@ Children:
         DataType: String
         Value: "RollingTimestamp"
   - Name: Ch03
-    Id: g=0175c11a72473057cbcf0ee9a4570b1b
     Type: 'CHANNEL_AI_DIAG:I:0'
     DataType: 'CHANNEL_AI_DIAG:I:0'
     Children:
@@ -31231,7 +31123,6 @@ Children:
         DataType: String
         Value: "RollingTimestamp"
   - Name: Ch04
-    Id: g=408929eee3915c404d85668aa46a4b20
     Type: 'CHANNEL_AI_DIAG:I:0'
     DataType: 'CHANNEL_AI_DIAG:I:0'
     Children:
@@ -31372,7 +31263,6 @@ Children:
         DataType: String
         Value: "RollingTimestamp"
   - Name: Ch05
-    Id: g=d92d4cafcb242995303f84b7a0b8edca
     Type: 'CHANNEL_AI_DIAG:I:0'
     DataType: 'CHANNEL_AI_DIAG:I:0'
     Children:
@@ -31513,7 +31403,6 @@ Children:
         DataType: String
         Value: "RollingTimestamp"
   - Name: Ch06
-    Id: g=1d941d893021599737d92a8f111ca90c
     Type: 'CHANNEL_AI_DIAG:I:0'
     DataType: 'CHANNEL_AI_DIAG:I:0'
     Children:
@@ -31654,7 +31543,6 @@ Children:
         DataType: String
         Value: "RollingTimestamp"
   - Name: Ch07
-    Id: g=0bb05049982b372c2b97746a69d57cea
     Type: 'CHANNEL_AI_DIAG:I:0'
     DataType: 'CHANNEL_AI_DIAG:I:0'
     Children:
@@ -35105,7 +34993,6 @@ Children:
       DataType: String
       Value: "ORdy_ResetAckAll"
   - Name: CmdSrc
-    Id: g=4e4f86a0bfb67e66c3da9d141415ce41
     Type: P_COMMAND_SOURCE
     DataType: P_COMMAND_SOURCE
     Children:
@@ -35657,7 +35544,6 @@ Children:
     Type: FolderType
     Children:
     - Name: Alm_HiDev
-      Id: g=a15df959ea653af29ce772d287b054fa
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -36046,7 +35932,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_Fail
-      Id: g=350debb51b7fb302650d716b5232dee7
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -36435,7 +36320,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_HiHiDev
-      Id: g=15609113c66384942ed4ff2842f1d3f6
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -36824,7 +36708,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_IntlkTrip
-      Id: g=712c0c93ab91e99248da28a66d9bfa98
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -37213,7 +37096,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_LoDev
-      Id: g=24ff593fa18eb436ccaa0e0f3abbc221
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -37602,7 +37484,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_LoLoDev
-      Id: g=b8b668318b918c835856c19de47a1b6e
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -37991,7 +37872,6 @@ Children:
           DataType: String
           Value: "Overflow"
   - Name: '@AlarmSet'
-    Id: g=c91eb4186a12bdf49f924cf1f4d6ee2a
     Type: ALARM_SET
     DataType: ALARM_SET
     Children:
@@ -40029,7 +39909,6 @@ Children:
     Type: FolderType
     Children:
     - Name: Alm_Fail
-      Id: g=3b0595af0fd56844aa745a99f7b227d1
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -40418,7 +40297,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_HiRoC
-      Id: g=707ae19e2ab2e3fbd1ce2cbca563cd28
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -40807,7 +40685,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_Hi
-      Id: g=117e8a0388329607bd77c96580520ae1
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -41196,7 +41073,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_HiHi
-      Id: g=e0f9660862161b19c466f97921f24229
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -41585,7 +41461,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_LoDev
-      Id: g=d512d3c7ac09fe4bcba0c4313f5cb5e7
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -41974,7 +41849,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_LoLo
-      Id: g=507068cc8f352b3f0220c19f0aeb9f57
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -42363,7 +42237,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_HiDev
-      Id: g=301ddca880f296add8506a77db6b9311
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -42752,7 +42625,6 @@ Children:
           DataType: String
           Value: "Overflow"
     - Name: Alm_Lo
-      Id: g=1070e36f28546e5415fb8ffdfa807b89
       Type: ALARM_CONDITION
       DataType: ALARM_CONDITION
       Children:
@@ -43141,7 +43013,6 @@ Children:
           DataType: String
           Value: "Overflow"
   - Name: '@AlarmSet'
-    Id: g=eca443772b138fa57ed7338d085428e9
     Type: ALARM_SET
     DataType: ALARM_SET
     Children:
@@ -44634,7 +44505,6 @@ Children:
       DataType: String
       Value: "Malfunction"
   - Name: LoopCurrent
-    Id: g=727246819859c021f246aa9fed0b15e3
     Type: 'CHANNEL_AI:I:0'
     DataType: 'CHANNEL_AI:I:0'
     Children:
@@ -44687,12 +44557,10 @@ Children:
         DataType: String
         Value: "RollingTimestamp"
   - Name: PV
-    Id: g=7bed4294fae411170d84d83939176ec1
     Type: 'CHANNEL_AI_HART:I:0'
     DataType: 'CHANNEL_AI_HART:I:0'
     Children:
     - Name: Ch
-      Id: g=482e2055bf656281dd307de47f555c85
       Type: 'CHANNEL_AI:I:0'
       DataType: 'CHANNEL_AI:I:0'
       Children:
@@ -44777,12 +44645,10 @@ Children:
         DataType: String
         Value: "Constant"
   - Name: SV
-    Id: g=d009b43c0b3c2ae57baf0677152f308d
     Type: 'CHANNEL_AI_HART:I:0'
     DataType: 'CHANNEL_AI_HART:I:0'
     Children:
     - Name: Ch
-      Id: g=cdf76ba78bcb7df284e11e6aabf9e24b
       Type: 'CHANNEL_AI:I:0'
       DataType: 'CHANNEL_AI:I:0'
       Children:
@@ -44867,12 +44733,10 @@ Children:
         DataType: String
         Value: "Constant"
   - Name: TV
-    Id: g=653c541d9ef7e1e9b7292143bfd5fa7e
     Type: 'CHANNEL_AI_HART:I:0'
     DataType: 'CHANNEL_AI_HART:I:0'
     Children:
     - Name: Ch
-      Id: g=801dac3c12f5c13f34b737423e66689c
       Type: 'CHANNEL_AI:I:0'
       DataType: 'CHANNEL_AI:I:0'
       Children:
@@ -44957,12 +44821,10 @@ Children:
         DataType: String
         Value: "Constant"
   - Name: QV
-    Id: g=ca270141bd1d2713241f02e5e467f871
     Type: 'CHANNEL_AI_HART:I:0'
     DataType: 'CHANNEL_AI_HART:I:0'
     Children:
     - Name: Ch
-      Id: g=705189e5ff722c44ab064489268d9eb6
       Type: 'CHANNEL_AI:I:0'
       DataType: 'CHANNEL_AI:I:0'
       Children:
@@ -45047,7 +44909,6 @@ Children:
         DataType: String
         Value: "Constant"
   - Name: Static
-    Id: g=bf3a118722330912aa71643cdf983fa5
     Type: 'AB:5000_HART_Static_Struct:I:0'
     DataType: 'AB:5000_HART_Static_Struct:I:0'
     Children:
@@ -46644,7 +46505,6 @@ Children:
   ValueRank: Any
   Children:
   - Name: Ch00
-    Id: g=bbd619098d55f40bc5732b2706654de7
     Type: 'AB:5000_AI_HART_Channel:C:0'
     DataType: 'AB:5000_AI_HART_Channel:C:0'
     Children:
@@ -46801,7 +46661,6 @@ Children:
         DataType: String
         Value: "AlarmDeadband"
   - Name: Ch01
-    Id: g=0ebf658ead83d8d434a3ad600e1ee9d9
     Type: 'AB:5000_AI_HART_Channel:C:0'
     DataType: 'AB:5000_AI_HART_Channel:C:0'
     Children:
@@ -46958,7 +46817,6 @@ Children:
         DataType: String
         Value: "AlarmDeadband"
   - Name: Ch02
-    Id: g=145db15846428a9dd6e79253bfb2b4e9
     Type: 'AB:5000_AI_HART_Channel:C:0'
     DataType: 'AB:5000_AI_HART_Channel:C:0'
     Children:
@@ -47115,7 +46973,6 @@ Children:
         DataType: String
         Value: "AlarmDeadband"
   - Name: Ch03
-    Id: g=c156ae314a5283107b0422da19835a73
     Type: 'AB:5000_AI_HART_Channel:C:0'
     DataType: 'AB:5000_AI_HART_Channel:C:0'
     Children:
@@ -47272,7 +47129,6 @@ Children:
         DataType: String
         Value: "AlarmDeadband"
   - Name: Ch04
-    Id: g=95886029a53f3223685442a412839d90
     Type: 'AB:5000_AI_HART_Channel:C:0'
     DataType: 'AB:5000_AI_HART_Channel:C:0'
     Children:
@@ -47429,7 +47285,6 @@ Children:
         DataType: String
         Value: "AlarmDeadband"
   - Name: Ch05
-    Id: g=ca2d05fcba6cb8cbed02af256ef1a3fd
     Type: 'AB:5000_AI_HART_Channel:C:0'
     DataType: 'AB:5000_AI_HART_Channel:C:0'
     Children:
@@ -47586,7 +47441,6 @@ Children:
         DataType: String
         Value: "AlarmDeadband"
   - Name: Ch06
-    Id: g=b1be3f058be1ee1979a08514410cdf69
     Type: 'AB:5000_AI_HART_Channel:C:0'
     DataType: 'AB:5000_AI_HART_Channel:C:0'
     Children:
@@ -47743,7 +47597,6 @@ Children:
         DataType: String
         Value: "AlarmDeadband"
   - Name: Ch07
-    Id: g=49ed1ae54495d59ea48da10f856a2d18
     Type: 'AB:5000_AI_HART_Channel:C:0'
     DataType: 'AB:5000_AI_HART_Channel:C:0'
     Children:
