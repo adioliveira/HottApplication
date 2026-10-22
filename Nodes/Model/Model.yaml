@@ -8,3 +8,4 @@ Children:
 - File: GeneralAlarms/GeneralAlarms.yaml
 - File: Log01/Log01.yaml
 - File: OPCUA/OPCUA.yaml
+- File: TurbineDemo/TurbineDemo.yaml

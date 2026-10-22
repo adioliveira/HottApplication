@@ -11437,7 +11437,7 @@ Children:
             - Name: Dialog
               Type: BaseDataVariableType
               DataType: NodeId
-              Value: "/Objects/HottApplication/UI/Templates/Frames/BrowserBoxSmall"
+              Value: "/Objects/HottApplication/UI/Templates/Frames/BrowserBox"
             - Name: AliasNode
               Type: BaseDataVariableType
               DataType: NodeId
@@ -11504,6 +11504,10 @@ Children:
         - Name: Severity
           Type: PropertyType
           DataType: UInt16
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
   - Name: PolyLine5
     Type: PolyLine
     Children:
@@ -29018,6 +29022,7 @@ Children:
         ModellingRule: Optional
         Value: 10.0
       - Name: DataGrid1
+        Id: g=3f97bc4925b00f981f4b333bb6582cba
         Type: DataGrid
         Children:
         - Name: Model
@@ -29317,6 +29322,7 @@ Children:
         ModellingRule: Optional
         Value: 10.0
       - Name: DataGrid1
+        Id: g=69ee63146ce363982ddf7d3363b6a072
         Type: DataGrid
         Children:
         - Name: Model
@@ -29615,6 +29621,7 @@ Children:
         ModellingRule: Optional
         Value: 10.0
       - Name: DataGrid1
+        Id: g=a1b1f0cfbfb857f009a9ce19c202b2e6
         Type: DataGrid
         Children:
         - Name: Model
@@ -29913,6 +29920,7 @@ Children:
         ModellingRule: Optional
         Value: 10.0
       - Name: DataGrid1
+        Id: g=56b483f5a701b054d8cb3363ae401b67
         Type: DataGrid
         Children:
         - Name: Model
@@ -52270,7 +52278,7 @@ Children:
             Type: BaseDataVariableType
             DataType: LocalizedText
             ModellingRule: Optional
-            Value: {"LocaleId":"en-US","Text":"PLC Data"}
+            Value: {"LocaleId":"en-US","Text":"Controller Data"}
           - Name: VerticalAlignment
             Type: BaseVariableType
             DataType: VerticalAlignment
@@ -52742,7 +52750,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "../../../../../../../windTurbineObject/PLCData@SourceTimestamp"
+                  Value: "/Objects/HottApplication/Model/TurbineDemo/windTurbineModel2/PLCData@SourceTimestamp"
               - Name: HorizontalAlignment
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
@@ -52813,7 +52821,7 @@ Children:
                     - Name: DynamicLink
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "../../../../../../../../../windTurbineObject/PLCData>power_output"
+                      Value: "/Objects/HottApplication/Model/TurbineDemo/windTurbineModel2/PLCData>power_output"
               - Name: HorizontalAlignment
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
@@ -52879,7 +52887,7 @@ Children:
                     - Name: DynamicLink
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "../../../../../../../../../windTurbineObject/PLCData>rotor_speed"
+                      Value: "/Objects/HottApplication/Model/TurbineDemo/windTurbineModel2/PLCData>rotor_speed"
               - Name: HorizontalAlignment
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
@@ -52945,7 +52953,7 @@ Children:
                     - Name: DynamicLink
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "../../../../../../../../../windTurbineObject/PLCData>generator_temp"
+                      Value: "/Objects/HottApplication/Model/TurbineDemo/windTurbineModel2/PLCData>generator_temp"
               - Name: HorizontalAlignment
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
@@ -53011,7 +53019,7 @@ Children:
                     - Name: DynamicLink
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "../../../../../../../../../windTurbineObject/PLCData>gearbox_temp"
+                      Value: "/Objects/HottApplication/Model/TurbineDemo/windTurbineModel2/PLCData>gearbox_temp"
               - Name: HorizontalAlignment
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
@@ -53077,7 +53085,7 @@ Children:
                     - Name: DynamicLink
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "../../../../../../../../../windTurbineObject/PLCData>vibration_level"
+                      Value: "/Objects/HottApplication/Model/TurbineDemo/windTurbineModel2/PLCData>vibration_level"
               - Name: HorizontalAlignment
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
@@ -53129,7 +53137,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "../../../../../../../windTurbineObject/PLCData>error_code"
+                  Value: "/Objects/HottApplication/Model/TurbineDemo/windTurbineModel2/PLCData>error_code"
               - Name: HorizontalAlignment
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
@@ -53811,24 +53819,10 @@ Children:
                 Type: BaseDataVariableType
                 DataType: LocalizedText
                 Children:
-                - Name: StringFormatter1
-                  Type: StringFormatter
-                  Children:
-                  - Name: Format
-                    Type: BaseDataVariableType
-                    DataType: LocalizedText
-                    ReferenceType: HasParameter
-                    ModellingRule: Optional
-                    Value: {"LocaleId":"en-US","Text":"{0:f2}"}
-                  - Name: ns=2;Source0
-                    Type: BaseDataVariableType
-                    DataType: BaseDataType
-                    ReferenceType: HasSource
-                    Children:
-                    - Name: DynamicLink
-                      Type: DynamicLink
-                      DataType: NodePath
-                      Value: "../../../../../../../../../windTurbineObject/weatherData/wind_speed"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../../windTurbineObject/weatherData/wind_speed"
               - Name: HorizontalAlignment
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
@@ -53877,24 +53871,10 @@ Children:
                 Type: BaseDataVariableType
                 DataType: LocalizedText
                 Children:
-                - Name: StringFormatter1
-                  Type: StringFormatter
-                  Children:
-                  - Name: Format
-                    Type: BaseDataVariableType
-                    DataType: LocalizedText
-                    ReferenceType: HasParameter
-                    ModellingRule: Optional
-                    Value: {"LocaleId":"en-US","Text":"{0:f2}"}
-                  - Name: ns=2;Source0
-                    Type: BaseDataVariableType
-                    DataType: BaseDataType
-                    ReferenceType: HasSource
-                    Children:
-                    - Name: DynamicLink
-                      Type: DynamicLink
-                      DataType: NodePath
-                      Value: "../../../../../../../../../windTurbineObject/weatherData/wind_direction"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../../windTurbineObject/weatherData/wind_direction"
               - Name: HorizontalAlignment
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
@@ -53943,24 +53923,10 @@ Children:
                 Type: BaseDataVariableType
                 DataType: LocalizedText
                 Children:
-                - Name: StringFormatter1
-                  Type: StringFormatter
-                  Children:
-                  - Name: Format
-                    Type: BaseDataVariableType
-                    DataType: LocalizedText
-                    ReferenceType: HasParameter
-                    ModellingRule: Optional
-                    Value: {"LocaleId":"en-US","Text":"{0:f2}"}
-                  - Name: ns=2;Source0
-                    Type: BaseDataVariableType
-                    DataType: BaseDataType
-                    ReferenceType: HasSource
-                    Children:
-                    - Name: DynamicLink
-                      Type: DynamicLink
-                      DataType: NodePath
-                      Value: "../../../../../../../../../windTurbineObject/weatherData/temperature"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../../windTurbineObject/weatherData/temperature"
               - Name: HorizontalAlignment
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
@@ -54017,7 +53983,7 @@ Children:
                     DataType: LocalizedText
                     ReferenceType: HasParameter
                     ModellingRule: Optional
-                    Value: {"LocaleId":"en-US","Text":"{0:f2}"}
+                    Value: {"LocaleId":"","Text":"{0:f2}"}
                   - Name: ns=2;Source0
                     Type: BaseDataVariableType
                     DataType: BaseDataType
@@ -54189,6 +54155,108 @@ Children:
           DataType: Color
           ModellingRule: Optional
           Value: "#e4e4e4"
+      - Name: Button1
+        Type: Button
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Update data"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 790.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: MouseClickEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Value: "/Objects/HottApplication/NetLogic/RESTApiClient"
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "GetWeatherData"
+              - Name: InputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: turibneNodeId
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../../../windTurbineObject@NodeId"
+          - Name: EventArguments
+            Type: MouseClickEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 60.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 60.0
+        - Name: WordWrap
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: BackgroundColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#32cd32"
     - Name: Rectangle1
       Type: Rectangle
       Children:
@@ -54416,3 +54484,45 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 61.0
+  - Name: windTurbineObject
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Objects/HottApplication/Model/Types/windTurbineModel_Main"
+    - Name: KeyValueConverter1
+      Type: ValueMapConverter
+      Children:
+      - Name: Source
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/IpAddress"
+      - Name: ns=2;Pairs
+        Type: BaseObjectType
+        ModellingRule: None
+        Children:
+        - Name: Pair
+          Type: ValueMapPair
+          ModellingRule: None
+          Children:
+          - Name: Key
+            Type: BaseDataVariableType
+            DataType: String
+            ModellingRule: None
+            Value: "192.168.1.19"
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: NodeId
+            ModellingRule: None
+            Value: "/Objects/HottApplication/Model/TurbineDemo/windTurbineModel2"
+    - Name: NodeClass
+      Type: PropertyType
+      DataType: NodePointerNodeClass
+      ModellingRule: Optional

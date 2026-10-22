@@ -107,7 +107,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Window}/Width"
+            Value: "{Window}/FullScreen"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -130,7 +130,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Window}/Height"
+            Value: "{Window}/FullScreen"
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -437,6 +437,11 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 5.0
+      - Name: ScrollBarStyle
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "Default"
     - Name: FillColor
       Type: BaseDataVariableType
       DataType: Color
