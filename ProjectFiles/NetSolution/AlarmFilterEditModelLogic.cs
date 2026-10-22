@@ -12,6 +12,7 @@ using FTOptix.Alarm;
 using FTOptix.SerialPort;
 using FTOptix.SQLiteStore;
 using FTOptix.MQTTBroker;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class AlarmFilterEditModelLogic : BaseNetLogic

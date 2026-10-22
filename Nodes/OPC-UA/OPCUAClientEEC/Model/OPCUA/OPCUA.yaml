@@ -1,0 +1,5 @@
+Name: ns=46;OPCUA
+Id: ns=46;g=5ab2a84fb3a291aadebd6fcb191c39f3
+Type: FolderType
+Children:
+- File: EEC_Main/EEC_Main.yaml

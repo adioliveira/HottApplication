@@ -1,0 +1,48 @@
+Name: ns=46;OEE1H
+Id: ns=46;g=0669436fc89cd93b0d1ff186ecf0f9ce
+Type: FolderType
+Children:
+- Name: ns=46;OPC_OEE1H_HR
+  Id: ns=46;g=f8dd27ff0ef17c79fdceed04a3676725
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: ns=46;OPC_OEE1H_LostRunningUnits
+  Id: ns=46;g=1e54ff7a267d0659c78803d6892c4056
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: ns=46;OPC_OEE1H_ProducedIdealAvailableUnits
+  Id: ns=46;g=3469699d9eba187aba3c0bb39a054ef7
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: ns=46;OPC_OEE1H_ProducedIdealRunningUnits
+  Id: ns=46;g=5d639194cfe177b64f873e16b97d01e0
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: ns=46;OPC_OEE1H_Aux_OutStateCurrentTime
+  Id: ns=46;g=7e325a7c8e541b5751c99684d96af22a
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: ns=46;OPC_OEE1H_Out_01H_ProducedTotalUnits
+  Id: ns=46;g=87ec13c3d92af83238dff30a0a6465bb
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: ns=46;OPC_OEE1H_Out_01H_OEE
+  Id: ns=46;g=df675cacfb165a9cbc08a97a45b44a93
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: ns=46;OPC_OEE1H_Out_01H_Availability
+  Id: ns=46;g=e79bb6c9880ab1e0fcef0119d7c24d5d
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: ns=46;OPC_OEE1H_Out_01H_Quality
+  Id: ns=46;g=f5df2bc3e11046779c576d8059a94089
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: ns=46;OPC_OEE1H_Out_01H_Performance
+  Id: ns=46;g=c916e762e11760d3d507fb174e79e99d
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: ns=46;OPC_OEE1H_Out_01H_ProducedGoodUnits
+  Id: ns=46;g=45563a4e7b156dae81edb6df66954b7a
+  Type: BaseDataVariableType
+  DataType: Int32

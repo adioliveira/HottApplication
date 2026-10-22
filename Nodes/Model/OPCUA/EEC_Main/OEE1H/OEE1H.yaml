@@ -1,0 +1,146 @@
+Name: OEE1H
+Type: FolderType
+Children:
+- Name: OPC_OEE1H_HR
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_HR"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OPC_OEE1H_LostRunningUnits
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_LostRunningUnits"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OPC_OEE1H_ProducedIdealAvailableUnits
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_ProducedIdealAvailableUnits"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OPC_OEE1H_ProducedIdealRunningUnits
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_ProducedIdealRunningUnits"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OPC_OEE1H_Aux_OutStateCurrentTime
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Aux_OutStateCurrentTime"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OPC_OEE1H_Out_01H_ProducedTotalUnits
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_ProducedTotalUnits"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OPC_OEE1H_Out_01H_OEE
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_OEE"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OPC_OEE1H_Out_01H_Availability
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_Availability"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OPC_OEE1H_Out_01H_Quality
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_Quality"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OPC_OEE1H_Out_01H_Performance
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_Performance"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OPC_OEE1H_Out_01H_ProducedGoodUnits
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_ProducedGoodUnits"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

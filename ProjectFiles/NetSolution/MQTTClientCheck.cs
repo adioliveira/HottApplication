@@ -22,6 +22,7 @@ using FTOptix.SerialPort;
 using FTOptix.Core;
 using FTOptix.SQLiteStore;
 using FTOptix.MQTTBroker;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class MQTTClientCheck : BaseNetLogic

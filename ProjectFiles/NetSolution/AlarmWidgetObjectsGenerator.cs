@@ -11,6 +11,7 @@ using FTOptix.Alarm;
 using FTOptix.SerialPort;
 using FTOptix.SQLiteStore;
 using FTOptix.MQTTBroker;
+using FTOptix.OPCUAServer;
 using static AlarmFilterDataLogic;
 using OpcUa = UAManagedCore.OpcUa;
 #endregion

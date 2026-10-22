@@ -1,0 +1,133 @@
+Name: OEE6H
+Type: FolderType
+Children:
+- Name: OPC_OEE6H_HR
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE6H/OPC_OEE6H_HR"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OPC_OEE6H_LostRunningUnits
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE6H/OPC_OEE6H_LostRunningUnits"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OPC_OEE6H_ProducedIdealAvailableUnits
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE6H/OPC_OEE6H_ProducedIdealAvailableUnits"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OPC_OEE6H_ProducedIdealRunningUnits
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE6H/OPC_OEE6H_ProducedIdealRunningUnits"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OPC_OEE6H_Out_06H_ProducedTotalUnits
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE6H/OPC_OEE6H_Out_06H_ProducedTotalUnits"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OPC_OEE6H_Out_06H_OEE
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE6H/OPC_OEE6H_Out_06H_OEE"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OPC_OEE6H_Out_06H_Availability
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE6H/OPC_OEE6H_Out_06H_Availability"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OPC_OEE6H_Out_06H_Quality
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE6H/OPC_OEE6H_Out_06H_Quality"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OPC_OEE6H_Out_06H_Performance
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE6H/OPC_OEE6H_Out_06H_Performance"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OPC_OEE6H_Out_06H_ProducedGoodUnits
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../OPC-UA/OPCUAClientEEC/Objects/HMIOptixStandard1/Model/OPCUA/EEC_Main/OEE6H/OPC_OEE6H_Out_06H_ProducedGoodUnits"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
