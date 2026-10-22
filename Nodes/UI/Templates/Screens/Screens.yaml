@@ -11437,7 +11437,7 @@ Children:
             - Name: Dialog
               Type: BaseDataVariableType
               DataType: NodeId
-              Value: "/Objects/HottApplication/UI/Templates/Frames/BrowserBoxSmall"
+              Value: "/Objects/HottApplication/UI/Templates/Frames/BrowserBox"
             - Name: AliasNode
               Type: BaseDataVariableType
               DataType: NodeId
@@ -11504,6 +11504,10 @@ Children:
         - Name: Severity
           Type: PropertyType
           DataType: UInt16
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
   - Name: PolyLine5
     Type: PolyLine
     Children:
