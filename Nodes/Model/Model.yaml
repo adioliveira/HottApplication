@@ -22,3 +22,4 @@ Children:
       Type: BaseVariableType
       DataType: DynamicLinkMode
       Value: 2
+- File: DataCollection/DataCollection.yaml

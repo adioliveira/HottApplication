@@ -343,11 +343,32 @@ Children:
     Children:
     - Name: Default
       Type: PieChartStyle
+      Children:
+      - Name: HoleSizePercent
+        Type: BaseDataVariableType
+        DataType: Percentage
+        Value: 50.0
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+        Value: "IBM Plex Sans"
+    - Name: PieChartStyle1
+      Type: PieChartStyle
+      Children:
+      - Name: HoleSizePercent
+        Type: BaseDataVariableType
+        DataType: Percentage
+        Value: 10.0
   - Name: HistogramChartStyles
     Type: BaseObjectType
     Children:
     - Name: Default
       Type: HistogramChartStyle
+      Children:
+      - Name: Spacing
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 10.0
   - Name: LabelStyles
     Type: BaseObjectType
     Children:

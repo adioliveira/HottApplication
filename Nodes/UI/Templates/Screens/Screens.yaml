@@ -46078,6 +46078,353 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
+    - Name: Rectangle5
+      Type: Rectangle
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 440.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 230.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 650.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 420.0
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#fbfbfb"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#d6d6d6"
+      - Name: HistogramChart1
+        Type: HistogramChart
+        Children:
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/HottApplication/Model/DataCollection/Object1"
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Objects/HottApplication/Loggers/DataLogger/SamplingMode"
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+        - Name: Label
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Item}@BrowseName"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Double
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Item}@Value"
+        - Class: Reference
+          Target: ns=3;i=1105
+          Direction: Forward
+        - Name: Item
+          Type: Alias
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Objects/HottApplication/Loggers/DataLogger/SamplingMode"
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 70.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 54.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 126.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 300.0
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Histogram Chart"}
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 15.0
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 700
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 10.0
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 440.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 230.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 200.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 420.0
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#fbfbfb"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#d6d6d6"
+      - Name: PieChart1
+        Type: PieChart
+        Children:
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/HottApplication/Model/DataCollection/Object1"
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Objects/HottApplication/Loggers/DataLogger/SamplingMode"
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+        - Name: Label
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Item}@BrowseName"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Double
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Item}@Value"
+        - Class: Reference
+          Target: ns=3;i=1104
+          Direction: Forward
+        - Name: Item
+          Type: Alias
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Objects/HottApplication/Loggers/DataLogger/SamplingMode"
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 130.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 180.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 190.0
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Pie Chart"}
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 15.0
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 700
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 10.0
+    - Name: Rectangle4
+      Type: Rectangle
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 290.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 60.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: -10.0
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: Opacity
+        Type: BaseVariableType
+        DataType: Float
+        ModellingRule: Optional
+        Value: 100.0
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+      - Name: Label5
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Data Collection"}
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 10.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#0dcaf0"
+        - Name: FontFamily
+          Type: BaseDataVariableType
+          DataType: Font
+          ModellingRule: Optional
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 700
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
   - Name: DataGrid1
     Type: DataGrid
     Children:
@@ -46383,12 +46730,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 920.0
+      Value: 889.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 594.0
+      Value: 260.0
     - Name: Item
       Type: Alias
       DataType: NodeId
@@ -46400,12 +46747,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 201.0
+      Value: 200.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 33.0
+      Value: 70.0
     - Name: AutoRefreshTime
       Type: BaseDataVariableType
       DataType: Duration
@@ -46435,17 +46782,17 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 51.0
+      Value: 194.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 147.0
+      Value: 337.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 24.0
+      Value: 15.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -46456,6 +46803,11 @@ Children:
       DataType: TextHorizontalAlignment
       ModellingRule: Optional
       Value: 1
+    - Name: FontWeight
+      Type: BaseDataVariableType
+      DataType: FontWeightEnum
+      ModellingRule: Optional
+      Value: 700
   - Name: TextBox1
     Type: TextBox
     Children:
@@ -46482,12 +46834,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 56.0
+      Value: 199.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 177.0
+      Value: 367.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -46515,17 +46867,17 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 51.0
+      Value: 344.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 232.0
+      Value: 337.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 24.0
+      Value: 15.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -46536,6 +46888,11 @@ Children:
       DataType: TextHorizontalAlignment
       ModellingRule: Optional
       Value: 1
+    - Name: FontWeight
+      Type: BaseDataVariableType
+      DataType: FontWeightEnum
+      ModellingRule: Optional
+      Value: 700
   - Name: TextBox2
     Type: TextBox
     Children:
@@ -46562,12 +46919,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 56.0
+      Value: 349.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 262.0
+      Value: 367.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -46595,17 +46952,17 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 51.0
+      Value: 494.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 316.0
+      Value: 337.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 24.0
+      Value: 15.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -46616,6 +46973,11 @@ Children:
       DataType: TextHorizontalAlignment
       ModellingRule: Optional
       Value: 1
+    - Name: FontWeight
+      Type: BaseDataVariableType
+      DataType: FontWeightEnum
+      ModellingRule: Optional
+      Value: 700
   - Name: TextBox3
     Type: TextBox
     Children:
@@ -46642,12 +47004,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 56.0
+      Value: 499.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 346.0
+      Value: 367.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -46675,17 +47037,17 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 51.0
+      Value: 644.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 398.0
+      Value: 337.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 24.0
+      Value: 15.0
     - Name: TextHorizontalAlignment
       Type: BaseVariableType
       DataType: TextHorizontalAlignment
@@ -46696,6 +47058,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 150.0
+    - Name: FontWeight
+      Type: BaseDataVariableType
+      DataType: FontWeightEnum
+      ModellingRule: Optional
+      Value: 700
   - Name: TextBox4
     Type: TextBox
     Children:
@@ -46722,12 +47089,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 56.0
+      Value: 649.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 428.0
+      Value: 367.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -46755,17 +47122,17 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 51.0
+      Value: 800.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 477.0
+      Value: 338.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 24.0
+      Value: 15.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -46776,6 +47143,11 @@ Children:
       DataType: TextHorizontalAlignment
       ModellingRule: Optional
       Value: 1
+    - Name: FontWeight
+      Type: BaseDataVariableType
+      DataType: FontWeightEnum
+      ModellingRule: Optional
+      Value: 700
   - Name: TextBox5
     Type: TextBox
     Children:
@@ -46802,12 +47174,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 56.0
+      Value: 799.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 507.0
+      Value: 367.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -46835,17 +47207,17 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 51.0
+      Value: 944.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 559.0
+      Value: 337.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 24.0
+      Value: 15.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -46856,6 +47228,11 @@ Children:
       DataType: TextHorizontalAlignment
       ModellingRule: Optional
       Value: 1
+    - Name: FontWeight
+      Type: BaseDataVariableType
+      DataType: FontWeightEnum
+      ModellingRule: Optional
+      Value: 700
   - Name: TextBox6
     Type: TextBox
     Children:
@@ -46902,12 +47279,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 56.0
+      Value: 949.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 589.0
+      Value: 367.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -46935,12 +47312,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 70.0
+      Value: 50.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 38.0
+      Value: 70.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -47039,12 +47416,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 50.0
+      Value: 30.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 85.0
+      Value: 117.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -47086,12 +47463,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 56.0
+      Value: 36.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 115.0
+      Value: 147.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -50076,7 +50453,6 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: -20.0
       - Name: CornerRadius
         Type: BaseDataVariableType
         DataType: Size

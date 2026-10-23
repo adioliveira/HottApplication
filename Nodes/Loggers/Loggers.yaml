@@ -107,6 +107,7 @@ Children:
   Type: DataLogger
   Children:
   - Name: SamplingMode
+    Id: g=958916cb9d4576dd9737634b6f15f85b
     Type: PropertyType
     DataType: ns=9;SamplingModeEnum
   - Name: Store

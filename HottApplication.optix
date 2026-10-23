@@ -180,15 +180,15 @@ Project:
    Uri: '7af76427160d6bd7202614d75ed74ef5#HMIOptixStandard1'
    ServerUri: 7af76427160d6bd7202614d75ed74ef5
  Statistics:
-  TotalNodeCount: 270370
-  Objects: 6335
+  TotalNodeCount: 270477
+  Objects: 6346
   ObjectTypes: 110
-  Variables: 263741
+  Variables: 263837
   VariableTypes: 71
   DataTypes: 72
   Methods: 41
-  References: 590
+  References: 592
   ReferenceTypes: 0
-  Files: 80
+  Files: 81
  Nodes:
  - File: Nodes/HottApplication.yaml
