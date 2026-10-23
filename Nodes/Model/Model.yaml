@@ -7,7 +7,7 @@ Children:
 - File: Tanks/Tanks.yaml
 - File: GeneralAlarms/GeneralAlarms.yaml
 - File: Log01/Log01.yaml
-- File: MQTT/MQTT.yaml
+- File: OPCUA/OPCUA.yaml
 - File: TurbineDemo/TurbineDemo.yaml
 - Name: BrokerConnection
   Type: BaseDataVariableType

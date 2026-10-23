@@ -157,6 +157,30 @@ Children:
     Children:
     - Name: Default
       Type: GaugeStyle
+      Children:
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+        Value: "IBM Plex Sans Medium"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 8.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: HandleBorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+      - Name: HandleSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 25.0
     - Name: forPump
       Type: GaugeStyle
       Children:
@@ -201,6 +225,34 @@ Children:
     Children:
     - Name: Default
       Type: ChartStyle
+      Children:
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+        Value: "IBM Plex Sans Medium"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 10.0
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: GridColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f0f2f5"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 400
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3b3b3b"
+      - Name: AxisColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e2e6ed"
   - Name: DataListStyles
     Type: BaseObjectType
     Children:

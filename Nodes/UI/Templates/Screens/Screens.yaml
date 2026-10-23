@@ -29022,6 +29022,7 @@ Children:
         ModellingRule: Optional
         Value: 10.0
       - Name: DataGrid1
+        Id: g=3f97bc4925b00f981f4b333bb6582cba
         Type: DataGrid
         Children:
         - Name: Model
@@ -29321,6 +29322,7 @@ Children:
         ModellingRule: Optional
         Value: 10.0
       - Name: DataGrid1
+        Id: g=69ee63146ce363982ddf7d3363b6a072
         Type: DataGrid
         Children:
         - Name: Model
@@ -29619,6 +29621,7 @@ Children:
         ModellingRule: Optional
         Value: 10.0
       - Name: DataGrid1
+        Id: g=a1b1f0cfbfb857f009a9ce19c202b2e6
         Type: DataGrid
         Children:
         - Name: Model
@@ -29917,6 +29920,7 @@ Children:
         ModellingRule: Optional
         Value: 10.0
       - Name: DataGrid1
+        Id: g=56b483f5a701b054d8cb3363ae401b67
         Type: DataGrid
         Children:
         - Name: Model
@@ -32856,7 +32860,7 @@ Children:
     DataType: Color
     ModellingRule: Optional
     Value: "#e4e4e4"
-  - Name: Rectangle9
+  - Name: Rectangle9_OEE
     Type: Rectangle
     Children:
     - Name: Width
@@ -32904,7 +32908,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/HottApplication/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:Performance_Tracking/Wrk_PerformanceTracking_RAPID/Out_01H_Performance"
+          Value: "/Objects/HottApplication/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_OEE"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -32935,7 +32939,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/HottApplication/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:Performance_Tracking/Wrk_PerformanceTracking_RAPID/Out_12H_Performance"
+              Value: "/Objects/HottApplication/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_OEE"
           - Name: Color
             Type: BaseDataVariableType
             DataType: Color
@@ -32944,7 +32948,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../../Rectangle5/Label9/TextColor"
+              Value: "../../../../lbl_OEE/TextColor"
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -32992,6 +32996,7 @@ Children:
         Type: BaseDataVariableType
         DataType: Float
         ModellingRule: Optional
+        Value: 11.0
       - Name: MinorTickCount
         Type: BaseDataVariableType
         DataType: Float
@@ -33031,11 +33036,20 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
+      - Name: Opacity
+        Type: BaseVariableType
+        DataType: Float
+        ModellingRule: Optional
+        Value: 100.0
+      - Name: Tooltip
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
       ModellingRule: Optional
-    - Name: Label3
+    - Name: lbl_OEE
       Type: Label
       Children:
       - Name: Text
@@ -33073,7 +33087,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "/Objects/HottApplication/Model/MQTT/Subscribe_From_EEC/MQTT_Out_01H_OEE"
+                  Value: "/Objects/HottApplication/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_OEE"
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -33120,7 +33134,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/HottApplication/Model/OEE12H/OEE_12HR"
+              Value: "/Objects/HottApplication/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_HR"
           - Name: ns=2;Pairs
             Type: BaseObjectType
             Children:
@@ -34315,7 +34329,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"MÁQUINA 01"}
+        Value: {"LocaleId":"en-US","Text":"MÁQUINA 01 [EEC]"}
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size
@@ -34385,14 +34399,14 @@ Children:
       - Name: Pens
         Type: BaseObjectType
         Children:
-        - Name: TrendPen1
+        - Name: Produção Atual
           Type: TrendPen
           DataType: BaseDataType
           Children:
           - Name: Thickness
             Type: BaseDataVariableType
             DataType: Size
-            Value: -1.0
+            Value: 2.0
           - Name: Enabled
             Type: BaseDataVariableType
             DataType: Boolean
@@ -34404,14 +34418,24 @@ Children:
             DataType: Color
             ModellingRule: Optional
             Value: "#0fafff"
-        - Name: TrendPen2
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/HottApplication/Loggers/DataLogger1/VariablesToLog/TotalProduction/LastValue"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Peças Boas
           Type: TrendPen
           DataType: BaseDataType
           Children:
           - Name: Thickness
             Type: BaseDataVariableType
             DataType: Size
-            Value: -1.0
+            Value: 2.0
           - Name: Enabled
             Type: BaseDataVariableType
             DataType: Boolean
@@ -34422,7 +34446,17 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             ModellingRule: Optional
-            Value: "#d97706"
+            Value: "#07b90e"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/HottApplication/Loggers/DataLogger1/VariablesToLog/GoodParts/LastValue"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
       - Class: Reference
         Target: ns=3;i=1129
         Direction: Forward
@@ -34436,7 +34470,7 @@ Children:
         - Name: Window
           Type: BaseDataVariableType
           DataType: Duration
-          Value: "0:00:00:05.0000000"
+          Value: "0:00:30:00.0000000"
         - Name: Interactive
           Type: BaseDataVariableType
           DataType: Boolean
@@ -34456,7 +34490,7 @@ Children:
         - Name: MaxValue
           Type: BaseDataVariableType
           DataType: Size
-          Value: 5000.0
+          Value: 6000.0
         - Name: AutoScale
           Type: BaseDataVariableType
           DataType: Boolean
@@ -34480,7 +34514,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 515.0
+        Value: 497.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -34500,7 +34534,12 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 45.0
+        Value: 63.0
+      - Name: RefreshTime
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: Optional
+        Value: 1000
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -34608,6 +34647,61 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 15.0
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#3b3b3b"
+    - Name: Label2
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"{0:d}"}
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/HottApplication/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_ProducedIdealAvailableUnits"
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 75.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 31.0
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        ModellingRule: Optional
+        Value: 400
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+        ModellingRule: Optional
+        Value: "IBM Plex Sans SemiBold"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 25.0
       - Name: TextColor
         Type: BaseDataVariableType
         DataType: Color
@@ -34733,12 +34827,12 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 96.0
+        Value: 79.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 11.0
+        Value: 10.0
       - Name: FontWeight
         Type: BaseDataVariableType
         DataType: FontWeightEnum
@@ -34754,6 +34848,61 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 15.0
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#3b3b3b"
+    - Name: Label2
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"{0:d}"}
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/HottApplication/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_ProducedIdealRunningUnits"
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 78.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 31.0
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        ModellingRule: Optional
+        Value: 400
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+        ModellingRule: Optional
+        Value: "IBM Plex Sans SemiBold"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 25.0
       - Name: TextColor
         Type: BaseDataVariableType
         DataType: Color
@@ -34841,7 +34990,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 90.0
+        Value: 78.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -34867,7 +35016,66 @@ Children:
         DataType: Color
         ModellingRule: Optional
         Value: "#3b3b3b"
-  - Name: Rectangle11
+    - Name: Label2
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"{0:d}"}
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/HottApplication/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_ProducedTotalUnits"
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 78.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 31.0
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        ModellingRule: Optional
+        Value: 400
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+        ModellingRule: Optional
+        Value: "IBM Plex Sans SemiBold"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 25.0
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#3b3b3b"
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+  - Name: Rectangle11_Availability
     Type: Rectangle
     Children:
     - Name: Width
@@ -34915,7 +35123,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/HottApplication/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:Performance_Tracking/Wrk_PerformanceTracking_RAPID/Out_01H_Performance"
+          Value: "/Objects/HottApplication/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_Availability"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -34946,7 +35154,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/HottApplication/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:Performance_Tracking/Wrk_PerformanceTracking_RAPID/Out_12H_Performance"
+              Value: "/Objects/HottApplication/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_Availability"
           - Name: Color
             Type: BaseDataVariableType
             DataType: Color
@@ -34955,7 +35163,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../../Rectangle5/Label9/TextColor"
+              Value: "../../../../lbl_Availability/TextColor"
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -35003,6 +35211,7 @@ Children:
         Type: BaseDataVariableType
         DataType: Float
         ModellingRule: Optional
+        Value: 11.0
       - Name: MinorTickCount
         Type: BaseDataVariableType
         DataType: Float
@@ -35046,7 +35255,7 @@ Children:
       Type: BaseVariableType
       DataType: HorizontalAlignment
       ModellingRule: Optional
-    - Name: Label3
+    - Name: lbl_Availability
       Type: Label
       Children:
       - Name: Text
@@ -35084,7 +35293,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "/Objects/HottApplication/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:Performance_Tracking/Wrk_PerformanceTracking_RAPID/Out_01H_OEE"
+                  Value: "/Objects/HottApplication/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_Availability"
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -35131,7 +35340,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/HottApplication/Model/OEE12H/OEE_12HR"
+              Value: "/Objects/HottApplication/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_Availability"
           - Name: ns=2;Pairs
             Type: BaseObjectType
             Children:
@@ -36239,7 +36448,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-  - Name: Rectangle14
+  - Name: Rectangle14_Quality
     Type: Rectangle
     Children:
     - Name: Width
@@ -36287,7 +36496,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/HottApplication/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:Performance_Tracking/Wrk_PerformanceTracking_RAPID/Out_01H_Performance"
+          Value: "/Objects/HottApplication/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_Quality"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -36318,7 +36527,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/HottApplication/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:Performance_Tracking/Wrk_PerformanceTracking_RAPID/Out_12H_Performance"
+              Value: "/Objects/HottApplication/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_Quality"
           - Name: Color
             Type: BaseDataVariableType
             DataType: Color
@@ -36327,7 +36536,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../../Rectangle5/Label9/TextColor"
+              Value: "../../../../lbl_Quality/TextColor"
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -36375,6 +36584,7 @@ Children:
         Type: BaseDataVariableType
         DataType: Float
         ModellingRule: Optional
+        Value: 11.0
       - Name: MinorTickCount
         Type: BaseDataVariableType
         DataType: Float
@@ -36418,7 +36628,7 @@ Children:
       Type: BaseVariableType
       DataType: HorizontalAlignment
       ModellingRule: Optional
-    - Name: Label3
+    - Name: lbl_Quality
       Type: Label
       Children:
       - Name: Text
@@ -36456,7 +36666,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "/Objects/HottApplication/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:Performance_Tracking/Wrk_PerformanceTracking_RAPID/Out_01H_OEE"
+                  Value: "/Objects/HottApplication/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_Quality"
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -36503,7 +36713,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/HottApplication/Model/OEE12H/OEE_12HR"
+              Value: "/Objects/HottApplication/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_Quality"
           - Name: ns=2;Pairs
             Type: BaseObjectType
             Children:
@@ -37243,7 +37453,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#faed53"
+                Value: "#fc8383"
             - Name: Pair67
               Type: ValueMapPair
               Children:
@@ -37254,7 +37464,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#faed53"
+                Value: "#fc8383"
             - Name: Pair68
               Type: ValueMapPair
               Children:
@@ -37265,7 +37475,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#faed53"
+                Value: "#fc8383"
             - Name: Pair69
               Type: ValueMapPair
               Children:
@@ -37276,7 +37486,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#faed53"
+                Value: "#fc8383"
             - Name: Pair70
               Type: ValueMapPair
               Children:
@@ -37287,7 +37497,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#faed53"
+                Value: "#fc8383"
             - Name: Pair71
               Type: ValueMapPair
               Children:
@@ -37298,7 +37508,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#faed53"
+                Value: "#fc8383"
             - Name: Pair72
               Type: ValueMapPair
               Children:
@@ -37309,7 +37519,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#faed53"
+                Value: "#fc8383"
             - Name: Pair73
               Type: ValueMapPair
               Children:
@@ -37320,7 +37530,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#76f87b"
+                Value: "#fc8383"
             - Name: Pair74
               Type: ValueMapPair
               Children:
@@ -37331,7 +37541,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#76f87b"
+                Value: "#fc8383"
             - Name: Pair75
               Type: ValueMapPair
               Children:
@@ -37342,7 +37552,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#76f87b"
+                Value: "#fc8383"
             - Name: Pair76
               Type: ValueMapPair
               Children:
@@ -37353,7 +37563,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#76f87b"
+                Value: "#fc8383"
             - Name: Pair77
               Type: ValueMapPair
               Children:
@@ -37364,7 +37574,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#76f87b"
+                Value: "#faed53"
             - Name: Pair78
               Type: ValueMapPair
               Children:
@@ -37375,7 +37585,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#76f87b"
+                Value: "#faed53"
             - Name: Pair79
               Type: ValueMapPair
               Children:
@@ -37386,7 +37596,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#76f87b"
+                Value: "#faed53"
             - Name: Pair80
               Type: ValueMapPair
               Children:
@@ -37397,7 +37607,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#76f87b"
+                Value: "#faed53"
             - Name: Pair81
               Type: ValueMapPair
               Children:
@@ -37408,7 +37618,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#76f87b"
+                Value: "#faed53"
             - Name: Pair82
               Type: ValueMapPair
               Children:
@@ -37419,7 +37629,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#76f87b"
+                Value: "#faed53"
             - Name: Pair83
               Type: ValueMapPair
               Children:
@@ -37430,7 +37640,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#76f87b"
+                Value: "#faed53"
             - Name: Pair84
               Type: ValueMapPair
               Children:
@@ -37441,7 +37651,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#76f87b"
+                Value: "#faed53"
             - Name: Pair85
               Type: ValueMapPair
               Children:
@@ -37452,7 +37662,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#76f87b"
+                Value: "#07b90e"
             - Name: Pair86
               Type: ValueMapPair
               Children:
@@ -37463,7 +37673,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#76f87b"
+                Value: "#07b90e"
             - Name: Pair87
               Type: ValueMapPair
               Children:
@@ -37474,7 +37684,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#76f87b"
+                Value: "#07b90e"
             - Name: Pair88
               Type: ValueMapPair
               Children:
@@ -37551,7 +37761,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#faed53"
+                Value: "#fc8383"
             - Name: Pair95
               Type: ValueMapPair
               Children:
@@ -37562,7 +37772,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#faed53"
+                Value: "#fc8383"
             - Name: Pair96
               Type: ValueMapPair
               Children:
@@ -37573,7 +37783,7 @@ Children:
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
-                Value: "#faed53"
+                Value: "#fc8383"
       - Name: Elide
         Type: BaseDataVariableType
         DataType: ElideEnum
@@ -37611,7 +37821,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-  - Name: Rectangle16
+  - Name: Rectangle16_Performance
     Type: Rectangle
     Children:
     - Name: Width
@@ -37659,7 +37869,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/HottApplication/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:Performance_Tracking/Wrk_PerformanceTracking_RAPID/Out_01H_Performance"
+          Value: "/Objects/HottApplication/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_Performance"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -37690,7 +37900,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/HottApplication/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:Performance_Tracking/Wrk_PerformanceTracking_RAPID/Out_12H_Performance"
+              Value: "/Objects/HottApplication/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_Performance"
           - Name: Color
             Type: BaseDataVariableType
             DataType: Color
@@ -37699,7 +37909,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../../Rectangle5/Label9/TextColor"
+              Value: "../../../../lbl_Performance/TextColor"
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -37747,6 +37957,7 @@ Children:
         Type: BaseDataVariableType
         DataType: Float
         ModellingRule: Optional
+        Value: 11.0
       - Name: MinorTickCount
         Type: BaseDataVariableType
         DataType: Float
@@ -37790,7 +38001,7 @@ Children:
       Type: BaseVariableType
       DataType: HorizontalAlignment
       ModellingRule: Optional
-    - Name: Label3
+    - Name: lbl_Performance
       Type: Label
       Children:
       - Name: Text
@@ -37828,7 +38039,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "/Objects/HottApplication/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:Performance_Tracking/Wrk_PerformanceTracking_RAPID/Out_01H_OEE"
+                  Value: "/Objects/HottApplication/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_Performance"
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -37875,7 +38086,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/HottApplication/Model/OEE12H/OEE_12HR"
+              Value: "/Objects/HottApplication/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Out_01H_Performance"
           - Name: ns=2;Pairs
             Type: BaseObjectType
             Children:
@@ -45688,6 +45899,145 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
+  - Name: Label2
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"PRÓXIMA AMOSTRA:"}
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 38.0
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: FontFamily
+      Type: BaseDataVariableType
+      DataType: Font
+      ModellingRule: Optional
+      Value: "IBM Plex Sans Medium"
+    - Name: TextColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#3b3b3b"
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 920.0
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+  - Name: Label4
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"seg"}
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 37.0
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: FontFamily
+      Type: BaseDataVariableType
+      DataType: Font
+      ModellingRule: Optional
+      Value: "IBM Plex Sans Medium"
+    - Name: TextColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#3b3b3b"
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1112.0
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+  - Name: Label5
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/HottApplication/Model/OPCUA/EEC_Main/OEE1H/OPC_OEE1H_Aux_OutStateCurrentTime"
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 38.0
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: FontFamily
+      Type: BaseDataVariableType
+      DataType: Font
+      ModellingRule: Optional
+      Value: "IBM Plex Sans Medium"
+    - Name: TextColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#eb001b"
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1056.0
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: TextVerticalAlignment
+      Type: BaseVariableType
+      DataType: TextVerticalAlignment
+      ModellingRule: Optional
+      Value: 1
 - Name: DataCollection
   Id: g=72d11eff90ab49a701cdfbbdd2765861
   Supertype: Screen

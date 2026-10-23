@@ -1,0 +1,5 @@
+Name: ns=46;Model
+Id: ns=46;g=21499675b350f5c37c751451b3d834fc
+Type: ModelCategoryFolder
+Children:
+- File: OPCUA/OPCUA.yaml
