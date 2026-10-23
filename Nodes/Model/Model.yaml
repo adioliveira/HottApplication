@@ -13,48 +13,12 @@ Children:
   Type: BaseDataVariableType
   DataType: Boolean
   Children:
-  - Name: KeyValueConverter1
-    Type: ValueMapConverter
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../MQTT/MQTTClientAlexa/Status"
     Children:
-    - Name: Source
-      Type: BaseDataVariableType
-      DataType: BaseDataType
-      ReferenceType: HasSource
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../MQTT/MQTTClientAlexa/Status"
-    - Name: ns=2;Pairs
-      Type: BaseObjectType
-      Children:
-      - Name: Pair
-        Type: ValueMapPair
-        Children:
-        - Name: Key
-          Type: BaseDataVariableType
-          DataType: UInt32
-        - Name: Value
-          Type: BaseDataVariableType
-          DataType: Boolean
-      - Name: Pair1
-        Type: ValueMapPair
-        Children:
-        - Name: Key
-          Type: BaseDataVariableType
-          DataType: UInt32
-          Value: 1
-        - Name: Value
-          Type: BaseDataVariableType
-          DataType: Boolean
-          Value: true
-      - Name: Pair2
-        Type: ValueMapPair
-        Children:
-        - Name: Key
-          Type: BaseDataVariableType
-          DataType: UInt32
-          Value: 2
-        - Name: Value
-          Type: BaseDataVariableType
-          DataType: Boolean
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
