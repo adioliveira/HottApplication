@@ -2,6 +2,7 @@ Name: MQTT
 Type: MQTTCategoryFolder
 Children:
 - Name: MQTTClient1
+  Id: g=f4320e358edaa0bf0a5fc23cf3ae2766
   Type: MQTTClient
   Children:
   - Name: BrokerAddress

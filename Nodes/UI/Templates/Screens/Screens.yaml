@@ -29485,6 +29485,7 @@ Children:
         ModellingRule: Optional
         Value: 10.0
       - Name: DataGrid1
+        Id: g=8f84caeb303f64f355c8191d96fd0e4a
         Type: DataGrid
         Children:
         - Name: Model
@@ -29784,6 +29785,7 @@ Children:
         ModellingRule: Optional
         Value: 10.0
       - Name: DataGrid1
+        Id: g=f2575b78ccaabe33555342f0f50ffc72
         Type: DataGrid
         Children:
         - Name: Model
@@ -30082,6 +30084,7 @@ Children:
         ModellingRule: Optional
         Value: 10.0
       - Name: DataGrid1
+        Id: g=a465c7435c63649369ee09813d56d417
         Type: DataGrid
         Children:
         - Name: Model
@@ -30380,6 +30383,7 @@ Children:
         ModellingRule: Optional
         Value: 10.0
       - Name: DataGrid1
+        Id: g=3e3802f73478f60b2bfadf819a16813b
         Type: DataGrid
         Children:
         - Name: Model
@@ -46965,7 +46969,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 30.0
+          Value: 40.0
         - Name: Height
           Type: BaseVariableType
           DataType: Size
@@ -48074,86 +48078,6 @@ Children:
         - Name: Severity
           Type: PropertyType
           DataType: UInt16
-  - Name: Label7
-    Type: Label
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Row Count:"}
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 30.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 117.0
-    - Name: FontSize
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 24.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 150.0
-    - Name: TextHorizontalAlignment
-      Type: BaseVariableType
-      DataType: TextHorizontalAlignment
-      ModellingRule: Optional
-      Value: 1
-  - Name: TextBox7
-    Type: TextBox
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/HottApplication/Model/Log01/RowCount"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 140.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 36.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 147.0
-    - Name: FontSize
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 18.0
-    - Name: Enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-      Value: true
-    - Name: TextHorizontalAlignment
-      Type: BaseVariableType
-      DataType: TextHorizontalAlignment
-      ModellingRule: Optional
-      Value: 1
   - Name: LeftMargin
     Type: BaseVariableType
     DataType: Size
