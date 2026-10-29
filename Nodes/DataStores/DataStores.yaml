@@ -588,3 +588,102 @@ Children:
   - Class: Reference
     Target: ns=10;i=59
     Direction: Forward
+- Name: EmbeddedDatabaseMQTTChat
+  Id: g=71696360bb3070612f0effca08800c27
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: DataLoggerMQTTChat
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=10;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: ns=0;DateTime
+        - Name: Message
+          Type: StoreColumn
+          DataType: String
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1000
+  - Class: Reference
+    Target: ns=40;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=40;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=10;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=67
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=59
+    Direction: Forward

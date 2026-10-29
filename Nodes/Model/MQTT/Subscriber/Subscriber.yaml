@@ -1,0 +1,7 @@
+Name: Subscriber
+Id: g=24f520e6352c9d507f31cd766bd2ee8d
+Type: FolderType
+Children:
+- Name: sMessage_1
+  Type: BaseDataVariableType
+  DataType: String

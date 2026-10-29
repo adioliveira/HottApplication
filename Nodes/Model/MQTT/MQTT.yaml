@@ -1,0 +1,5 @@
+Name: MQTT
+Type: FolderType
+Children:
+- File: Publisher/Publisher.yaml
+- File: Subscriber/Subscriber.yaml

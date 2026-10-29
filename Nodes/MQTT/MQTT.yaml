@@ -2,7 +2,6 @@ Name: MQTT
 Type: MQTTCategoryFolder
 Children:
 - Name: MQTTClient1
-  Id: g=d947bdb4e138994abfe4d24df3014fc5
   Type: MQTTClient
   Children:
   - Name: BrokerAddress
@@ -706,3 +705,179 @@ Children:
         Type: PropertyType
         DataType: NodeId
         Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType/EventFieldToLog"
+- Name: MQTTClient2
+  Type: MQTTClient
+  Children:
+  - Name: BrokerAddress
+    Type: PropertyType
+    DataType: String
+    Value: "localhost"
+  - Name: BrokerPort
+    Type: PropertyType
+    DataType: UInt16
+    Value: 8884
+  - Name: ClientId
+    Type: PropertyType
+    DataType: String
+    Value: "FTOptix-Main"
+  - Name: ProtocolVersion
+    Type: BaseDataVariableType
+    DataType: ProtocolVersionEnum
+  - Name: Status
+    Type: BaseDataVariableType
+    DataType: StatusEnum
+    ReferenceType: HasProperty
+    AccessLevel: Read
+  - Name: UserIdentityType
+    Type: BaseDataVariableType
+    DataType: ns=32;UserIdentityTypeEnum
+  - Name: SSLTLSEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: ValidateBrokerCertificate
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: WillMessageEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: WillTopic
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: WillPayload
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: WillQoS
+    Type: BaseDataVariableType
+    DataType: QoSLevelEnum
+  - Name: WillRetain
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: WillDelayInterval
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Class: Reference
+    Target: ns=32;i=12
+    Direction: Forward
+  - Class: Reference
+    Target: ns=32;i=44
+    Direction: Forward
+  - Name: MQTTPublisher1
+    Type: MQTTPublisher
+    Children:
+    - Name: SamplingMode
+      Type: PropertyType
+      DataType: ns=32;SamplingModeEnum
+      Value: 1
+    - Name: DataSource
+      Type: BaseDataVariableType
+      DataType: DataSourceEnum
+    - Name: Folder
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/HottApplication/Model/MQTT/Publisher"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/HottApplication/Model/MQTT/Publisher/sMessage_2"
+    - Name: DataLogger
+      Type: NodePointer
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/DataLogger"
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType/VariableToLog"
+    - Name: EventLogger
+      Type: NodePointer
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/EventLogger"
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType/EventFieldToLog"
+    - Name: Topic
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "message2"
+    - Name: QoS
+      Type: BaseDataVariableType
+      DataType: QoSLevelEnum
+    - Name: Retain
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: PFEnabled
+      Type: PropertyType
+      DataType: Boolean
+    - Name: PayloadUpdateTimestamp
+      Type: BaseDataVariableType
+      DataType: ns=0;DateTime
+      ReferenceType: HasProperty
+      AccessLevel: Read
+    - Name: SFEnabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: SFBufferMaxSize
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 1000
+    - Name: SFBufferUsage
+      Type: BaseDataVariableType
+      DataType: UInt32
+      AccessLevel: Read
+    - Name: SFBufferOverflow
+      Type: BaseDataVariableType
+      DataType: Boolean
+      AccessLevel: Read
+    - Name: SFBufferOverwrite
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: Item
+      Type: Alias
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/HottApplication/Model/MQTT/Publisher/sMessage_2"
+  - Name: MQTTSubscriber1
+    Type: MQTTSubscriber
+    Children:
+    - Name: Subscriptions
+      Type: BaseObjectType
+      Children:
+      - Name: DefaultJSONSubscription1
+        Type: Subscription
+        ReferenceType: HasOrderedComponent
+        Children:
+        - Name: Folder
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/HottApplication/Model/MQTT/Subscriber"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+        - Name: Topic
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "message1"
+        - Name: QoS
+          Type: BaseDataVariableType
+          DataType: QoSLevelEnum
+    - Class: Reference
+      Target: ns=32;i=47
+      Direction: Forward

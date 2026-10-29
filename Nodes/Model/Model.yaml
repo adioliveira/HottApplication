@@ -23,3 +23,4 @@ Children:
       DataType: DynamicLinkMode
       Value: 2
 - File: DataCollection/DataCollection.yaml
+- File: MQTT/MQTT.yaml
