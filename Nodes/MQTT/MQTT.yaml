@@ -2,7 +2,6 @@ Name: MQTT
 Type: MQTTCategoryFolder
 Children:
 - Name: MQTTClient1
-  Id: g=f4320e358edaa0bf0a5fc23cf3ae2766
   Type: MQTTClient
   Children:
   - Name: BrokerAddress
@@ -712,11 +711,11 @@ Children:
   - Name: BrokerAddress
     Type: PropertyType
     DataType: String
-    Value: "localhost"
+    Value: "192.168.1.7"
   - Name: BrokerPort
     Type: PropertyType
     DataType: UInt16
-    Value: 8884
+    Value: 8890
   - Name: ClientId
     Type: PropertyType
     DataType: String
