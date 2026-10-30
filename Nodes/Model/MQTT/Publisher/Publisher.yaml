@@ -1,0 +1,8 @@
+Name: Publisher
+Id: g=42508bcd4b1fc4d11af75a0f94999b92
+Type: FolderType
+Children:
+- Name: sMessage_2
+  Id: g=74593524dc5c2d9e2f255e6579b2c51d
+  Type: BaseDataVariableType
+  DataType: String
