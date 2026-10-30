@@ -5402,7 +5402,7 @@ Children:
     - Name: pumpURL
       Type: BaseDataVariableType
       DataType: UriString
-      Value: "http://127.0.0.1:8082"
+      Value: "http://localhost:8082"
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -5523,6 +5523,15 @@ Children:
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 90.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
     - Name: ConnStatus
       Type: BaseDataVariableType
       DataType: Boolean
@@ -11147,7 +11156,7 @@ Children:
     - Name: pumpURL
       Type: BaseDataVariableType
       DataType: UriString
-      Value: "http://localhost:8082"
+      Value: "http://192.168.1.22:8443"
     - Name: Label1
       Type: Label
       Children:
@@ -11222,7 +11231,7 @@ Children:
             - Name: Dialog
               Type: BaseDataVariableType
               DataType: NodeId
-              Value: "/Objects/HottApplication/UI/Templates/Frames/BrowserBoxSmall"
+              Value: "/Objects/HottApplication/UI/Templates/Frames/BrowserBox"
             - Name: AliasNode
               Type: BaseDataVariableType
               DataType: NodeId
@@ -24171,7 +24180,7 @@ Children:
       - Name: pumpURL
         Type: BaseDataVariableType
         DataType: UriString
-        Value: "http://127.0.0.1:8082"
+        Value: "http://localhost:8082"
       - Name: Icon_border
         Type: Image
         Children:

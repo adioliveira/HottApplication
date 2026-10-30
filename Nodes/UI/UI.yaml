@@ -4425,7 +4425,7 @@ Children:
         - Name: pumpURL
           Type: BaseDataVariableType
           DataType: UriString
-          Value: "http://127.0.0.1:8082"
+          Value: "http://localhost:8082"
         - Name: Icon_border
           Type: Image
           Children:
